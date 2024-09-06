@@ -1,0 +1,10 @@
+compile:
+	(g++ cpp/EM.cpp -o bin/EM)
+	(g++ cpp/test_grey.cpp -o bin/grey)
+	(g++ cpp/test_couleur.cpp -o bin/couleur)
+	(g++ cpp/blur.cpp -o bin/blur)
+	(g++ cpp/histo.cpp -o bin/histo)
+	(g++ cpp/ddp.cpp -o bin/ddp)
+	(g++ cpp/variance.cpp -o bin/variance)
+	(g++ cpp/noise.cpp -o bin/noise)
+	(g++ cpp/ddp_noise.cpp -o bin/ddp_noise)

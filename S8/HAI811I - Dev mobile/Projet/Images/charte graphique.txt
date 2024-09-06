@@ -1,0 +1,3 @@
+dégradé principal (fond, 60%) : #CEB9FE -> #E5DEFD
+couleur secondaires (texte, champs, 30%) : #000000
+couleur attractive (bouttons, mots important, 10%) : #0001d9

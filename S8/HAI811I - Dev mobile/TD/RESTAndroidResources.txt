@@ -1,0 +1,13 @@
+REST web services :
+https://mega.nz/file/AKZQgJzK#eMEO1yJ73o4R0uEcHzaMTf3kuwXCx0mu01v3zhLCfY8
+https://mega.nz/file/gDYgSJIJ#lhmmFHyvOwKIeyfJaK1eI4tnPwTx15QqUtiZOaky-fM
+https://www.youtube.com/playlist?list=PLbq4v00GDahJ1HiTmY2TWzWakrTEJOq1M
+
+
+REST web service for Android :
+https://www.youtube.com/watch?v=xPi-z3nOcn8
+https://futurestud.io/tutorials/how-to-run-an-android-app-against-a-localhost-api
+https://code.tutsplus.com/tutorials/android-from-scratch-using-rest-apis--cms-27117
+https://www.javatpoint.com/android-web-service
+https://medium.com/nerd-for-tech/rest-api-integration-in-android-studio-using-retrofit-2-7ee66b54cd04
+https://medium.com/android-news/consuming-rest-api-using-retrofit-library-in-android-ed47aef01ecb

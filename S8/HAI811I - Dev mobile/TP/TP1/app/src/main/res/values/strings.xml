@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="name">Nom</string>
+    <string name="firstname">Prénom</string>
+    <string name="age">Âge</string>
+    <string name="phone">Téléphone</string>
+    <string name="domain">Domaine</string>
+    <string name="button_validate">Valider</string>
+    <string name="button_language">🌐 EN</string>
+    <string name="enter_coordinate">Entrez vos coordonnées</string>
+    <string name="changed_language">Language switched to English</string>
+    <string name="yes">oui</string>
+    <string name="no">non</string>
+    <string name="back">retour</string>
+    <string name="home">menu</string>
+    <string name="add">ajouter</string>
+    <string name="clear">vider</string>
+    <string name="new_event">Ajoutez un evenement</string>
+    <string name="invalid_phone">Entrez un numéro de téléphone valide</string>
+    <string name="validation_title">Confirmer les informations</string>
+    <string name="validation_msg">Confirmez-vous toutes les informations fournies ?</string>
+    <string name="toast_canceled">annulé</string>
+    <string name="toast_validated">validé</string>
+    <string name="titre_validation"><u>Vos infos</u> :</string>
+    <string name="call">appeler</string>
+    <string name="train">Rechercher un trajet</string>
+    <string name="calendar">calendrier</string>
+    <string name="departure">depart</string>
+    <string name="arrival">arrivée</string>
+    <string name="search">recherche</string>
+    <string name="no_result">pas de trajet disponible</string>
+</resources>

@@ -1,0 +1,41 @@
+INSERT INTO Lieu VALUES (1, 'MONTPELLIER', '058443.54', '1541.14664');
+INSERT INTO Lieu VALUES (2, 'MONTPELLIER', '058333.54', '1531.14664');
+INSERT INTO Lieu VALUES (3, 'PEKIN', '26.81767', '112.18596');
+INSERT INTO Lieu VALUES (4, 'RIO', '-4.75051', '-38.95129');
+
+INSERT INTO Table_Date VALUES (1, 1, 10, 2022);
+INSERT INTO Table_Date VALUES (2, 2, 10, 2022);
+INSERT INTO Table_Date VALUES (3, 3, 10, 2022);
+INSERT INTO Table_Date VALUES (4, 4, 10, 2022);
+
+INSERT INTO Appareil_photo VALUES (1, 'NIXON','B150', 'EIJI FUMIO');
+INSERT INTO Appareil_photo VALUES (2, 'NIXON','B151', 'EIJI FUMIO');
+INSERT INTO Appareil_photo VALUES (3, 'NIXON','X10', 'EIJI FUMIO');
+INSERT INTO Appareil_photo VALUES (4, 'Panasonix','Lumix', 'JOHN');
+INSERT INTO Appareil_photo VALUES (5, 'Panasonix','Lumix2', 'JOHN');
+INSERT INTO Appareil_photo VALUES (6, 'CANON','EX500', 'JOHN');
+
+INSERT INTO Heritage_Photo VALUES (1, 1, 0, 1, 0);
+INSERT INTO Heritage_Photo VALUES (1, 2, 1, 0, 0);
+INSERT INTO Heritage_Photo VALUES (1, 3, 2, 0, 0);
+INSERT INTO Heritage_Photo VALUES (2, 2, 0, 0, 0);
+INSERT INTO Heritage_Photo VALUES (2, 3, 1, 0, 0);
+INSERT INTO Heritage_Photo VALUES (3, 3, 0, 0, 1);
+INSERT INTO Heritage_Photo VALUES (4, 4, 0, 1, 0);
+INSERT INTO Heritage_Photo VALUES (4, 5, 1, 0, 0);
+INSERT INTO Heritage_Photo VALUES (5, 5, 0, 0, 1);
+INSERT INTO Heritage_Photo VALUES (6, 6, 0, 1, 0);
+
+INSERT INTO Photo VALUES (1, 1, 1);
+INSERT INTO Photo VALUES (1, 2, 1);
+INSERT INTO Photo VALUES (1, 3, 1);
+INSERT INTO Photo VALUES (2, 4, 2);
+INSERT INTO Photo VALUES (2, 1, 2);
+INSERT INTO Photo VALUES (3, 2, 2);
+INSERT INTO Photo VALUES (3, 3, 2);
+INSERT INTO Photo VALUES (3, 4, 2);
+INSERT INTO Photo VALUES (3, 1, 3);
+INSERT INTO Photo VALUES (3, 2, 3);
+INSERT INTO Photo VALUES (4, 3, 3);
+INSERT INTO Photo VALUES (4, 4, 3);
+INSERT INTO Photo VALUES (5, 1, 4);

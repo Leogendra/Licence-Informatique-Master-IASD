@@ -1,0 +1,30 @@
+Zantour Wael
+A) -4 720h
+B) -3 150%
+C) -1 tâches du premier tier ne sont pas coupées
+D) -1 malgache integration
+   -1 cout fixes
+   -1 ghost supérieur
+   
+Thiebaut Guillaume
+A) -0
+B) -0
+C) -0
+D) -0
+parfait
+
+Asma GUERMOUCHE
+A) -0
+B) -0
+C) -1 ghost
+   -1 tâches non scindées (36% d'avancement)
+D) -2 ingé systeme et analyste
+   -1 malgache intégration
+   -1 ghost
+   -1 couts fixes non affectés
+   
+Andre Oussama
+A) 
+B) 
+C) -1 ghost
+D) -1 pas de ghost

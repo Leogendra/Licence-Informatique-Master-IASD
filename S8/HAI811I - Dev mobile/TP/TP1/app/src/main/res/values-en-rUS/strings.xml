@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="name">Name</string>
+    <string name="firstname">Firstname</string>
+    <string name="age">Age</string>
+    <string name="phone">Phone</string>
+    <string name="domain">Domain</string>
+    <string name="button_validate">Validate</string>
+    <string name="button_language">🌐 FR</string>
+    <string name="enter_coordinate">Enter coordinates</string>
+    <string name="changed_language">Langage défini en Francais</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="back">back</string>
+    <string name="home">home</string>
+    <string name="add">add</string>
+    <string name="clear">clear</string>
+    <string name="new_event">Add a event</string>
+    <string name="invalid_phone">Please provide a valid phone number</string>
+    <string name="validation_title">Confirm informations</string>
+    <string name="validation_msg">Do you confirm all the informations you entered ?</string>
+    <string name="toast_canceled">canceled</string>
+    <string name="toast_validated">validated</string>
+    <string name="titre_validation"><u>Your infos</u> :</string>
+    <string name="call">call</string>
+    <string name="train">Search a trip</string>
+    <string name="calendar">calendar</string>
+    <string name="departure">departure</string>
+    <string name="arrival">arrival</string>
+    <string name="search">search</string>
+    <string name="no_result">no trip available</string>
+</resources>

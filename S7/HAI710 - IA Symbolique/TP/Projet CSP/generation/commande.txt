@@ -1,0 +1,6 @@
+./urbcsp nb_variables 
+        taille_domaine 
+        nb_contraintes 
+        nb_tuples_dans_contraintes 
+        nb_reseaux 
+        > bench.txt
