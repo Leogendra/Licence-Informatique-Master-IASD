@@ -1,0 +1,28 @@
+CLASSIFICATION :
+accuracy ou f-mesure : faire un tableau
+
+EVALUATION :
+trouver le meilleur modèle :
+ - drop-out pour éviter le sur-apprentissage
+ - "gridsearch" bourinos pour tester les couches de neuronnes
+ - random search into gridsearch pour optimiser
+ - pas besoin de plus de 5 couches
+ 
+avoir du recul : ex "j'arrive pas à améliorer le modèle, pourquoi ? (et pas Cyprien)"
+- pas s'attendre à 99% car peu d'images
+
+- jeu de test : 5 vrai et 5 faux
+
+3) augmentation du jeu de données
+imagedatagenerator (tensorflow) : deformation d'images
+	- translation, rotation horizontale, zoom
+
+4) Transfer Learning
+utiliser un modèle qui à déjà appris (pas trop dur) -> fine tunning 
+
+5) Génération d'images
+ - GAN
+ - Autoencoders
+ - VAE
+ 
+ convolution : matrice de plus en plus petite, au début j'ai une image avec des pixels, 

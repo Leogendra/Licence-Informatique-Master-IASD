@@ -1,0 +1,3 @@
+But du projet : extraire les relations sémantiques de la phrase : un petit chat peut boire du lait, un chat peut boire du lait
+
+Poid négatif pour une relation, ne pas supprimer (sinon boucle sur les relations)

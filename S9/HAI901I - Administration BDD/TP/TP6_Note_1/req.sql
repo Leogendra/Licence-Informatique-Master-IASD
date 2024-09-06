@@ -1,0 +1,3 @@
+BEGIN
+  InfosTable('ABC');
+END;

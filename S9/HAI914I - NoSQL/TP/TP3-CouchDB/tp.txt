@@ -1,0 +1,221 @@
+curl -X PUT $COUCH3/thomas_occitanie
+
+curl -X POST $COUCH3/thomas_occitanie/_bulk_docs -d @DataTP/herault.json -H "Content-Type:application/json"
+curl -X POST $COUCH3/thomas_occitanie/_bulk_docs -d @DataTP/gard.json -H "Content-Type:application/json"
+curl -X POST $COUCH3/thomas_occitanie/_bulk_docs -d @DataTP/aveyron.json -H "Content-Type:application/json"
+curl -X POST $COUCH3/thomas_occitanie/_bulk_docs -d @DataTP/hauteGaronne.json -H "Content-Type:application/json"
+curl -X POST $COUCH3/thomas_occitanie/_bulk_docs -d @DataTP/regions_partiel.json -H "Content-Type:application/json"
+
+
+Exemple de communes :
+{
+    "_id": "34100",
+    "codeInsee": "34100",
+    "longitude": "2.8925",
+    "latitude": "43.4858",
+    "type": "commune",
+    "nom": "FERRIERES-POUSSAROU",
+    "dep": "34",
+    "old_reg": "91",
+    "populations": [
+        {
+            "pop_1975": 38.0961632716736
+        },
+        {
+            "pop_1985": 35.8391614288578
+        },
+        {
+            "pop_1995": 45.2742630644936
+        },
+        {
+            "pop_2005": 56.941818739832
+        },
+        {
+            "pop_2010": 60.6582030010204
+        }
+    ]
+}
+
+Ancienne commune :
+{
+    "_id": "91",
+    "reg": "91",
+    "chef_lieu_reg": "34172",
+    "type": "old_region",
+    "new_reg": "occitanie",
+    "nom_reg": "LANGUEDOC-ROUSSILLON",
+    "departements": [
+        {
+            "dep": "34",
+            "nom_dep": "HERAULT",
+            "chef_lieu_dep": "34172"
+        },
+        {
+            "dep": "30",
+            "nom_dep": "GARD",
+            "chef_lieu_dep": "30189"
+        },
+        {
+            "dep": "11",
+            "nom_dep": "AUDE",
+            "chef_lieu_dep": "11069"
+        },
+        {
+            "dep": "66",
+            "nom_dep": "PYRENEES-ORIENTALES",
+            "chef_lieu_dep": "66136"
+        }
+    ]
+}
+
+Nouvelle région:
+{
+    "_id": "occitanie",
+    "chef_lieu_reg": "31555",
+    "nom_reg": "Occitanie",
+    "type": "region",
+    "president": {
+        "nom": "Delga",
+        "prenom": "Carole"
+    }
+}
+
+Question 3 : Appropriation de la base de données
+
+1. lister les informations generales concernant le serveur couchdb, a l'aide du mecanisme GET
+> curl -X GET $COUCH3
+
+2. lister les informations generales concernant concernant la base occitanie, a l'aide du mecanisme GET. Pouvez vous connaître le nombre de documents contenus dans la base occitanie ?
+> curl -X GET $COUCH3/thomas_occitanie
+> curl -X GET $COUCH3/thomas_occitanie | jq '.doc_count'
+
+
+3. lister tous les documents de la BD
+> curl -X GET $COUCH3/thomas_occitanie/_all_docs
+
+
+4. faire afficher le contenu d'un document. Quel est son numero de revision ? Comment savoir si ce document a deja eté modifié ?
+(l'id en dernier)
+> curl -X GET $COUCH3/thomas_occitanie/occitanie
+
+modifié si '_rev':'2-etc'
+
+
+________________________________________________________________________________________________
+________________________________________________________________________________________________
+Question 4 : Définition de vues
+
+http://prodpeda-couchdb3-2.infra.umontpellier.fr:5984/_utils/
+
+________________________________________________________________________________________________
+4.1) MAP seulement
+
+1. donnez toutes les informations sur les regions (de type old region) de la base
+[créer la vue sur Fauxtrot]
+ou : 
+```
+curl -X PUT $COUCH3/thomas_occitanie/_design/vue_old_region -d '{
+    "views": {
+        "old_region": {
+            "map": "function (doc) { if (doc.type == "old_region") { emit(doc._id, 1); }}",
+        }
+    }
+}'
+```
+
+> curl -X GET $COUCH3/thomas_occitanie/_design/vue_old_region/_view/old_regions
+
+2. donner les noms (cles) et latitude et longitude de chaque commune
+```
+curl -X PUT "$COUCH3/thomas_occitanie/_design/vue_lat_long" -d '{
+    "views": {
+        "lat_long": {
+            "map": "function(doc) { if (doc.type == \"commune\") { emit(doc.id, { \"longitude\": doc.longitude, \"latitude\": doc.latitude }); } }"
+        }
+    }
+}'
+```
+> curl -X GET $COUCH3/thomas_occitanie/_design/lat_long/_view/lat_long
+
+3. donner le code insee (cle), le departement, la latitude et la longitude de MONTPELLIER (nom de la commune)
+```
+curl -X PUT "$COUCH3/thomas_occitanie/_design/vue_insee" -d '{
+    "views": {
+        "insee": {
+            "map": "function(doc) { if (doc.nom == \"MONTPELLIER\") { emit(doc.codeInsee, { \"longitude\": doc.longitude, \"latitude\": doc.latitude }); } }"
+        }
+    }
+}'
+```
+> curl -X GET $COUCH3/thomas_occitanie/_design/vue_insee/_view/insee
+
+4. donnez le nom et le prenom de la presidente de la region Occitanie
+
+curl -X PUT "$COUCH3/thomas_occitanie/_design/presidente_occitanie" -d '{
+    "views": {
+        "presidente": {
+            "map": "function(doc) { if (doc._id == \"occitanie\") { emit(doc._id, { \"nom\": doc.president.nom, \"prenom\": doc.president.prenom }); } }"
+        }
+    }
+}'
+
+> curl -X GET $COUCH3/thomas_occitanie/_design/presidente_occitanie/_view/presidente
+
+
+________________________________________________________________________________________________
+4.2) MAP et REDUCE
+1. donner le nombre de communes au total puis par departement et enfin par region (old region)
+curl -X PUT "$COUCH3/thomas_occitanie/_design/nb_communes" -d '{
+    "views": {
+        "nb_communes": {
+            "map": "function(doc) { if (doc.type == \"commune\") { emit(doc._id, { \"nom\": doc.nom }); } }"
+        }
+    }
+}'
+> curl -X GET $COUCH3/thomas_occitanie/_design/nb_communes/_view/nb_communes
+
+
+curl -X PUT "$COUCH3/thomas_occitanie/_design/nb_departements" -d '{
+    "views": {
+        "nb_departements": {
+            "map": "function(doc) { if (doc.type === \"commune\") { emit([doc.dep], 1); } }",
+            "reduce": "_count"
+        }
+    }
+}'
+> curl -X GET $COUCH3/thomas_occitanie/_design/nb_departements/_view/nb_departements?group_level=1
+
+
+curl -X PUT "$COUCH3/thomas_occitanie/_design/nb_regions" -d '{
+    "views": {
+        "nb_regions": {
+            "map": "function(doc) { if (doc.type === \"commune\") { emit([doc.old_reg], 1); } }",
+            "reduce": "_count"
+        }
+    }
+}'
+> curl -X GET $COUCH3/thomas_occitanie/_design/nb_regions/_view/nb_regions?group_level=1
+
+
+2. donner le nombre d'habitants par commune en 1985
+curl -X PUT "$COUCH3/thomas_occitanie/_design/pop_1985" -d '{
+    "views": {
+        "pop_1985": {
+            "map": "function(doc) { if (doc.type === \"commune\" && doc.populations) { for (var i = 0; i < doc.populations.length; i++) { if (doc.populations[i].pop_1985) { emit(doc._id, doc.populations[i].pop_1985); } } } }",
+            "reduce": "_sum"
+        }
+    }
+}'
+> curl -X GET $COUCH3/thomas_occitanie/_design/pop_1985/_view/pop_1985
+
+
+3. donner le nombre d'habitants par departement en 1985
+voir Fauxtrot
+
+4. donner le nombre d'habitants par region (anciennes regions) en 1985
+
+________________________________________________________________________________________________
+4.3) Autres requêtes
+1. donner les communes qui ont vu leurs populations decroitre entre 1985 et 1995
+2. donner les informations sur la nouvelle region Occitanie ainsi que sur les anciennes regions
+Languedoc-Roussillon et Midi-Pyrenees (forme de jointure)

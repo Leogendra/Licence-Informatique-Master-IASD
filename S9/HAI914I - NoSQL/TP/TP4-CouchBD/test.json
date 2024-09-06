@@ -1,0 +1,22 @@
+{
+    "db_name": "aalbert_vaccination",
+    "purge_seq": "0-g1AAAAJTeJzLYWBg4MhgTmEwTM4vTc5ISXIoKMpPKUhNSdSFChjrGupl5qUVJeqV5ubnlRSk5uRkphbppRXlALUy5bEASYYHQOo_EGQlMhAwy5igWQcgZt0nbBZhdy2AmLWfGmY1QMyaT5kfkxKAZFI9xWGV5AAyJ55ycxRA5thTbE4iQ5I8xJAsAKQDzag",
+    "update_seq": "1167-g1AAAAJTeJzLYWBg4MhgTmEwTM4vTc5ISXIoKMpPKUhNSdSFChjrGupl5qUVJeqV5ubnlRSk5uRkphbppRXlALUy5bEASYYHQOo_EGQlLiBgljFBsw5AzLqflTiZYnctgJi1PytxEsVmNUDMmp-V2EyBH5MSgGRSPTisZlBijgPInHiwOVMoMUcBZI492JwJFJiTyJAkDzakOwsAP4DSNw",
+    "sizes": {
+        "file": 1070984,
+        "external": 522242,
+        "active": 550366
+    },
+    "props": {},
+    "doc_del_count": 0,
+    "doc_count": 1165,
+    "disk_format_version": 8,
+    "compact_running": false,
+    "cluster": {
+        "q": 8,
+        "n": 3,
+        "w": 2,
+        "r": 2
+    },
+    "instance_start_time": "0"
+}
