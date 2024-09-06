@@ -1,0 +1,19 @@
+ErrorDocument 404 /errors/not-found
+ErrorDocument 403 /errors/forbidden
+ErrorDocument 500 /errors/internal-server-error
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirection particulières
+    RewriteRule ^(.*)(team|tournament|manage-tournament)/(\d+)$ $1$2.php?id=$3 [NC,L]
+
+    # Redirection sur toutes les pages
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+</IfModule>
+
+<Files "site-header.php">
+    Order Allow,Deny
+    Deny from all
+</Files>

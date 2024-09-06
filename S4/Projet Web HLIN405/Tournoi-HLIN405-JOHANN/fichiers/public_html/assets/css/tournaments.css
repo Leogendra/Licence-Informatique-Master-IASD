@@ -1,0 +1,9 @@
+table a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table a:hover {
+    text-decoration: none;
+    color: inherit;
+}

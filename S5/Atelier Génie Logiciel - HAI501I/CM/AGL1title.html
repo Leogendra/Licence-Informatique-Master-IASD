@@ -1,0 +1,2856 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#/ -->
+<html lang="en" class=" js no-mobile desktop no-ie chrome chrome95 pluginfile.php-section 1502768-section mod_resource-section content-section 1-section export-section gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius cssreflections csstransforms csstransitions no-touch retina fontface domloaded w-628 gt-240 gt-320 gt-480 lt-640 lt-768 lt-800 lt-1024 lt-1280 lt-1440 lt-1680 lt-1920 no-portrait landscape" id="index-page"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+
+  <title>title</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- REVEAL CSS-->
+  <link rel="stylesheet" href="./AGL1title_files/font-awesome.min.css">
+  <link rel="stylesheet" href="./AGL1title_files/reveal.css">
+  
+  <link rel="stylesheet" href="./AGL1title_files/white.css" id="theme">
+  
+  
+  <link rel="stylesheet" href="./AGL1title_files/title-footer-mod.css">
+
+  <!-- MERMAID-->
+  <script id="twitter-wjs" src="./AGL1title_files/widgets.js.téléchargement"></script><script src="./AGL1title_files/mermaid.min.js.téléchargement"></script><style>@media print {#ghostery-tracker-tally {display:none !important}}</style>
+  <style>
+  .mermaid {
+    font-size: 0.5em;
+  }
+  </style>
+
+  <style>
+    [class*=task-list-item] {
+    min-height: 22px;
+    margin-top: 6px!important;
+    margin-bottom: 6px!important;
+    padding-left: 0;
+    list-style: none;
+}
+
+[class*=task-list-item]>input:first-child {
+    position: absolute!important;
+    opacity: 0;
+    margin: 0;
+}
+[class*=task-list-item]>label {
+    padding-left: 29px!important;
+    min-height: 22px;
+    line-height: 22px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.task-list-item>input:first-child:checked+input[type=hidden]+label::before, .task-list-item>input:first-child:checked+label::before {
+    background-color: #ecf0f1;
+    border-color: #ecf0f1;
+}
+
+[class*=task-list-item]>input:first-child+input[type=hidden]+label::before, [class*=task-list-item]>input:first-child+label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #D3CFC8;
+    border-radius: 0;
+    margin-left: -29px;
+}
+
+
+[class*=task-list-item]>input:first-child:checked+input[type=hidden]+label::after, [class*=task-list-item]>input:first-child:checked+label::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 7px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-left: none;
+    border-top: none;
+    transform: translate(7.75px,4.5px) rotate(45deg);
+    -ms-transform: translate(7.75px,4.5px) rotate(45deg);
+}
+
+
+.task-list-item>input:first-child:checked+input[type=hidden]+label::after, .task-list-item>input:first-child:checked+label::after {
+    border-bottom-color: #95a5a6;
+    border-right-color: #95a5a6;
+}
+  </style>
+
+  <!-- Theme used for syntax highlighting of code -->
+  
+  <link rel="stylesheet" href="./AGL1title_files/monokai.css">
+  
+
+  
+  
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'libs/reveal.js/3.8.0/css/print/pdf.css' : 'libs/reveal.js/3.8.0/css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script><link rel="stylesheet" type="text/css" href="./AGL1title_files/paper.css">
+
+  <style>
+    /* Solarized Light theme */
+     .line {
+      display: block;
+    }
+    
+
+    .line.focus {
+      background: #fdf6e3;
+      color: #657b83;
+    }
+
+/*
+    .line.focus .hljs-comment,
+    .line.focus .hljs-quote {
+      color: #93a1a1;
+    }
+
+    .line.focus .hljs-keyword,
+    .line.focus .hljs-selector-tag,
+    .line.focus .hljs-addition {
+      color: #859900;
+    }
+
+    .line.focus .hljs-number,
+    .line.focus .hljs-string,
+    .line.focus .hljs-meta .hljs-meta-string,
+    .line.focus .hljs-literal,
+    .line.focus .hljs-doctag,
+    .line.focus .hljs-regexp {
+      color: #2aa198;
+    }
+
+    .line.focus .hljs-title,
+    .line.focus .hljs-section,
+    .line.focus .hljs-name,
+    .line.focus .hljs-selector-id,
+    .line.focus .hljs-selector-class {
+      color: #268bd2;
+    }
+
+    .line.focus .hljs-attribute,
+    .line.focus .hljs-attr,
+    .line.focus .hljs-variable,
+    .line.focus .hljs-template-variable,
+    .line.focus .hljs-class .hljs-title,
+    .line.focus .hljs-type {
+      color: #b58900;
+    }
+
+    .line.focus .hljs-symbol,
+    .line.focus .hljs-bullet,
+    .line.focus .hljs-subst,
+    .line.focus .hljs-meta,
+    .line.focus .hljs-meta .hljs-keyword,
+    .line.focus .hljs-selector-attr,
+    .line.focus .hljs-selector-pseudo,
+    .line.focus .hljs-link {
+      color: #cb4b16;
+    }
+
+    .line.focus .hljs-built_in,
+    .line.focus .hljs-deletion {
+      color: #dc322f;
+    }
+
+    .line.focus .hljs-formula {
+      background: #eee8d5;
+    }
+
+    .line.focus .hljs-emphasis {
+      font-style: italic;
+    }
+
+    .line.focus .hljs-strong {
+      font-weight: bold;
+    }
+
+    .yellow-slide .line.focus:nth-child(2) {
+      background: yellow;
+    }
+
+    .reveal .slides section .code-presenting-annotation {
+      font-size: 70%;
+    }
+    */
+
+    .reveal .slides section .fragment.current-only {
+      visibility: visible;
+      display: none;
+    }
+
+    .reveal .slides section .fragment.current-only.current-fragment {
+      display: block;
+    }
+
+/*
+    .line {
+      display: block;
+    }
+*/
+    .line.focus {
+       opacity: 1.0;
+    } 
+
+    /* .hljs {
+      background: none;
+    } */
+
+    /* .reveal pre {
+      width: 98%;
+      margin: 0px;
+      box-shadow: none;
+    }
+
+    .reveal pre code {
+      font-size: 1.2em;
+      line-height: 1.2;
+      border-radius: 10px;
+      max-height: 60vh !important;
+      overflow: hidden !important;
+    } */
+
+    @media (device-width: 100vw) and (device-height: 100vh) {
+      .reveal pre code {
+        max-height: 50vh !important;
+      }
+    }
+
+    #logo img {
+      max-height: 3.5em;
+      max-width: none;
+      min-width: 50px;
+    }
+
+    .reveal .slides section .code-presenting-annotation {
+      color: white;
+      background: black;
+      padding: 0px 15px;
+      border-radius: 15px;
+      opacity: 0.75 !important;
+      font-size: 50% !important;
+    }
+  </style>
+  <script>
+    if (window.location.search.match(/print-pdf-now/gi)) {
+      window.print();
+    }
+  </script><script type="text/javascript" src="./AGL1title_files/Chart.min.js.téléchargement"></script><script type="text/javascript" src="./AGL1title_files/csv2chart.js.téléchargement"></script><script type="text/javascript" src="./AGL1title_files/embed-tweet.js.téléchargement"></script><script type="text/javascript" src="./AGL1title_files/anything.js.téléchargement"></script><script type="text/javascript" src="./AGL1title_files/chalkboard.js.téléchargement"></script><script type="text/javascript" src="./AGL1title_files/menu.js.téléchargement"></script>
+<script type="text/javascript" src="./AGL1title_files/notes.js.téléchargement"></script><script type="text/javascript" src="./AGL1title_files/math.js.téléchargement"></script><script type="text/javascript" src="./AGL1title_files/highlight.js.téléchargement"></script><script type="text/javascript" src="./AGL1title_files/mermaid.min.js.téléchargement"></script><script type="text/javascript" src="./AGL1title_files/search.js.téléchargement"></script><script type="text/javascript" src="./AGL1title_files/zoom.js.téléchargement"></script><script type="text/javascript" src="./AGL1title_files/title-footer.js.téléchargement"></script><script type="text/javascript" src="./AGL1title_files/reveal-code-focus-1.0.0-mod.js.téléchargement"></script><link rel="stylesheet" href="./AGL1title_files/menu.css"><link rel="stylesheet" href="./AGL1title_files/font-awesome.min.css"><script type="text/javascript" src="./AGL1title_files/MathJax.js.téléchargement"></script><link href="./AGL1title_files/title-footer.css" type="text/css" rel="stylesheet"><style type="text/css">/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+#wanteeed html, #wanteeed body, #wanteeed div, #wanteeed span, #wanteeed applet, #wanteeed object, #wanteeed iframe,
+#wanteeed h1, #wanteeed h2, #wanteeed h3, #wanteeed h4, #wanteeed h5, #wanteeed h6, #wanteeed p, #wanteeed blockquote, #wanteeed pre,
+#wanteeed a, #wanteeed abbr, #wanteeed acronym, #wanteeed address, #wanteeed big, #wanteeed cite, #wanteeed code,
+#wanteeed del, #wanteeed dfn, #wanteeed em, #wanteeed img, #wanteeed ins, #wanteeed kbd, #wanteeed q, #wanteeed s, #wanteeed samp,
+#wanteeed small, #wanteeed strike, #wanteeed strong, #wanteeed sub, #wanteeed sup, #wanteeed tt, #wanteeed var,
+#wanteeed b, #wanteeed u, #wanteeed i, #wanteeed center,
+#wanteeed dl, #wanteeed dt, #wanteeed dd, #wanteeed ol, #wanteeed ul, #wanteeed li,
+#wanteeed fieldset, #wanteeed form, #wanteeed label, #wanteeed legend,
+#wanteeed table, #wanteeed caption, #wanteeed tbody, #wanteeed tfoot, #wanteeed thead, #wanteeed tr, #wanteeed th, #wanteeed td,
+#wanteeed article, #wanteeed aside, #wanteeed canvas, #wanteeed details, #wanteeed embed, 
+#wanteeed figure, #wanteeed figcaption, #wanteeed footer, #wanteeed header, #wanteeed hgroup, 
+#wanteeed menu, #wanteeed nav, #wanteeed output, #wanteeed ruby, #wanteeed section, #wanteeed summary,
+#wanteeed time, #wanteeed mark, #wanteeed audio, #wanteeed video, #wanteeed button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/*font-size: 100%;
+	font: inherit;*/
+	font:13px "Verdana", sans-serif;
+	text-align:left;
+	vertical-align: baseline;
+	-webkit-box-shadow: none;
+	-webkit-box-sizing:initial;
+	box-sizing:initial;
+	box-shadow: none;
+	color:#555555;
+	text-transform:none;
+}
+/* HTML5 display-role reset for older browsers */
+#wanteeed article, #wanteeed aside, #wanteeed details, #wanteeed figcaption, #wanteeed figure, 
+#wanteeed footer, #wanteeed header, #wanteeed hgroup, #wanteeed menu, #wanteeed nav, #wanteeed section {
+	display: block;
+}
+#wanteeed body {
+	line-height: 1;
+}
+#wanteeed ol, #wanteeed ul {
+	list-style: none;
+}
+#wanteeed blockquote, #wanteeed q {
+	quotes: none;
+}
+#wanteeed blockquote:before, #wanteeed blockquote:after,
+#wanteeed q:before, #wanteeed q:after {
+	content: '';
+	content: none;
+}
+#wanteeed table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*report*/
+
+#wanteeed-report html, #wanteeed-report body, #wanteeed-report div, #wanteeed-report span, #wanteeed-report applet, #wanteeed-report object, #wanteeed-report iframe,
+#wanteeed-report h1, #wanteeed-report h2, #wanteeed-report h3, #wanteeed-report h4, #wanteeed-report h5, #wanteeed-report h6, #wanteeed-report p, #wanteeed-report blockquote, #wanteeed-report pre,
+#wanteeed-report a, #wanteeed-report abbr, #wanteeed-report acronym, #wanteeed-report address, #wanteeed-report big, #wanteeed-report cite, #wanteeed-report code,
+#wanteeed-report del, #wanteeed-report dfn, #wanteeed-report em, #wanteeed-report img, #wanteeed-report ins, #wanteeed-report kbd, #wanteeed-report q, #wanteeed-report s, #wanteeed-report samp,
+#wanteeed-report small, #wanteeed-report strike, #wanteeed-report strong, #wanteeed-report sub, #wanteeed-report sup, #wanteeed-report tt, #wanteeed-report var,
+#wanteeed-report b, #wanteeed-report u, #wanteeed-report i, #wanteeed-report center,
+#wanteeed-report dl, #wanteeed-report dt, #wanteeed-report dd, #wanteeed-report ol, #wanteeed-report ul, #wanteeed-report li,
+#wanteeed-report fieldset, #wanteeed-report form, #wanteeed-report label, #wanteeed-report legend,
+#wanteeed-report table, #wanteeed-report caption, #wanteeed-report tbody, #wanteeed-report tfoot, #wanteeed-report thead, #wanteeed-report tr, #wanteeed-report th, #wanteeed-report td,
+#wanteeed-report article, #wanteeed-report aside, #wanteeed-report canvas, #wanteeed-report details, #wanteeed-report embed, 
+#wanteeed-report figure, #wanteeed-report figcaption, #wanteeed-report footer, #wanteeed-report header, #wanteeed-report hgroup, 
+#wanteeed-report menu, #wanteeed-report nav, #wanteeed-report output, #wanteeed-report ruby, #wanteeed-report section, #wanteeed-report summary,
+#wanteeed-report time, #wanteeed-report mark, #wanteeed-report audio, #wanteeed-report video, #wanteeed-report button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/*font-size: 100%;*/
+	text-align:left;
+	font:13px "Verdana", sans-serif;
+	vertical-align: baseline;
+	-webkit-box-shadow: none;
+	-webkit-box-sizing:initial;
+	box-sizing:initial;
+	box-shadow: none;
+	color:#555555;
+	text-transform:none;
+}
+/* HTML5 display-role reset for older browsers */
+#wanteeed-report article, #wanteeed-report aside, #wanteeed-report details, #wanteeed-report figcaption, #wanteeed-report figure, 
+#wanteeed-report footer, #wanteeed-report header, #wanteeed-report hgroup, #wanteeed-report menu, #wanteeed-report nav, #wanteeed-report section {
+	display: block;
+}
+#wanteeed-report body {
+	line-height: 1;
+}
+#wanteeed-report ol, #wanteeed-report ul {
+	list-style: none;
+}
+#wanteeed-report blockquote, #wanteeed-report q {
+	quotes: none;
+}
+#wanteeed-report blockquote:before, #wanteeed-report blockquote:after,
+#wanteeed-report q:before, #wanteeed-report q:after {
+	content: '';
+	content: none;
+}
+
+/*main item **/
+
+
+.wanteeed-main-item html, .wanteeed-main-item body, .wanteeed-main-item div, .wanteeed-main-item span, .wanteeed-main-item applet, .wanteeed-main-item object, .wanteeed-main-item iframe,
+.wanteeed-main-item h1, .wanteeed-main-item h2, .wanteeed-main-item h3, .wanteeed-main-item h4, .wanteeed-main-item h5, .wanteeed-main-item h6, .wanteeed-main-item p, .wanteeed-main-item blockquote, .wanteeed-main-item pre,
+.wanteeed-main-item a, .wanteeed-main-item abbr, .wanteeed-main-item acronym, .wanteeed-main-item address, .wanteeed-main-item big, .wanteeed-main-item cite, .wanteeed-main-item code,
+.wanteeed-main-item del, .wanteeed-main-item dfn, .wanteeed-main-item em, .wanteeed-main-item img, .wanteeed-main-item ins, .wanteeed-main-item kbd, .wanteeed-main-item q, .wanteeed-main-item s, .wanteeed-main-item samp,
+.wanteeed-main-item small, .wanteeed-main-item strike, .wanteeed-main-item strong, .wanteeed-main-item sub, .wanteeed-main-item sup, .wanteeed-main-item tt, .wanteeed-main-item var,
+.wanteeed-main-item b, .wanteeed-main-item u, .wanteeed-main-item i, .wanteeed-main-item center,
+.wanteeed-main-item dl, .wanteeed-main-item dt, .wanteeed-main-item dd, .wanteeed-main-item ol, .wanteeed-main-item ul, .wanteeed-main-item li,
+.wanteeed-main-item fieldset, .wanteeed-main-item form, .wanteeed-main-item label, .wanteeed-main-item legend,
+.wanteeed-main-item table, .wanteeed-main-item caption, .wanteeed-main-item tbody, .wanteeed-main-item tfoot, .wanteeed-main-item thead, .wanteeed-main-item tr, .wanteeed-main-item th, .wanteeed-main-item td,
+.wanteeed-main-item article, .wanteeed-main-item aside, .wanteeed-main-item canvas, .wanteeed-main-item details, .wanteeed-main-item embed, 
+.wanteeed-main-item figure, .wanteeed-main-item figcaption, .wanteeed-main-item footer, .wanteeed-main-item header, .wanteeed-main-item hgroup, 
+.wanteeed-main-item menu, .wanteeed-main-item nav, .wanteeed-main-item output, .wanteeed-main-item ruby, .wanteeed-main-item section, .wanteeed-main-item summary,
+.wanteeed-main-item time, .wanteeed-main-item mark, .wanteeed-main-item audio, .wanteeed-main-item video, .wanteeed-main-item button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/*font-size: 100%;*/
+	text-align:left;
+	font:13px "Verdana", sans-serif;
+	vertical-align: baseline;
+	-webkit-box-shadow: none;
+	-webkit-box-sizing:initial;
+	box-sizing:initial;
+	box-shadow: none;
+	color:#555555;
+	text-transform:none;
+}
+/* HTML5 display-role reset for older browsers */
+.wanteeed-main-item article, .wanteeed-main-item aside, .wanteeed-main-item details, .wanteeed-main-item figcaption, .wanteeed-main-item figure, 
+.wanteeed-main-item footer, .wanteeed-main-item header, .wanteeed-main-item hgroup, .wanteeed-main-item menu, .wanteeed-main-item nav, .wanteeed-main-item section {
+	display: block;
+}
+.wanteeed-main-item body {
+	line-height: 1;
+}
+.wanteeed-main-item ol, .wanteeed-main-item ul {
+	list-style: none;
+}
+.wanteeed-main-item blockquote, .wanteeed-main-item q {
+	quotes: none;
+}
+.wanteeed-main-item blockquote:before, .wanteeed-main-item blockquote:after,
+.wanteeed-main-item q:before, .wanteeed-main-item q:after {
+	content: '';
+	content: none;
+}
+
+
+
+
+#wanteeed-report table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#wanteeed-progress-bar div  {
+    background-size: 30px 30px;
+	color:white;
+	background-color:rgb(209, 43, 53);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                        transparent 75%, transparent);            
+    
+    -webkit-animation: animate-stripes 3s linear infinite;             
+}
+
+
+@-webkit-keyframes animate-stripes
+{
+    from {
+        background-position: 0 0;
+    }
+    to {
+       background-position: 60px 0;
+    }
+}</style><style type="text/css">/* ========================================================================
+ * bootstrap-tour - v0.10.1
+ * http://bootstraptour.com
+ * ========================================================================
+ * Copyright 2012-2013 Ulrich Sossou
+ *
+ * ========================================================================
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ========================================================================
+ */
+
+/*!
+ * Bootstrap v3.1.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+
+
+.popover-wanteeed html, .popover-wanteeed body, .popover-wanteeed div, .popover-wanteeed span, .popover-wanteeed applet, .popover-wanteeed object, .popover-wanteeed iframe,
+.popover-wanteeed h1, .popover-wanteeed h2, .popover-wanteeed h3, .popover-wanteeed h4, .popover-wanteeed h5, .popover-wanteeed h6, .popover-wanteeed p, .popover-wanteeed blockquote, .popover-wanteeed pre,
+.popover-wanteeed a, .popover-wanteeed abbr, .popover-wanteeed acronym, .popover-wanteeed address, .popover-wanteeed big, .popover-wanteeed cite, .popover-wanteeed code,
+.popover-wanteeed del, .popover-wanteeed dfn, .popover-wanteeed em, .popover-wanteeed img, .popover-wanteeed ins, .popover-wanteeed kbd, .popover-wanteeed q, .popover-wanteeed s, .popover-wanteeed samp,
+.popover-wanteeed small, .popover-wanteeed strike, .popover-wanteeed strong, .popover-wanteeed sub, .popover-wanteeed sup, .popover-wanteeed tt, .popover-wanteeed var,
+.popover-wanteeed b, .popover-wanteeed u, .popover-wanteeed i, .popover-wanteeed center,
+.popover-wanteeed dl, .popover-wanteeed dt, .popover-wanteeed dd, .popover-wanteeed ol, .popover-wanteeed ul, .popover-wanteeed li,
+.popover-wanteeed fieldset, .popover-wanteeed form, .popover-wanteeed label, .popover-wanteeed legend,
+.popover-wanteeed table, .popover-wanteeed caption, .popover-wanteeed tbody, .popover-wanteeed tfoot, .popover-wanteeed thead, .popover-wanteeed tr, .popover-wanteeed th, .popover-wanteeed td,
+.popover-wanteeed article, .popover-wanteeed aside, .popover-wanteeed canvas, .popover-wanteeed details, .popover-wanteeed embed,
+.popover-wanteeed figure, .popover-wanteeed figcaption, .popover-wanteeed footer, .popover-wanteeed header, .popover-wanteeed hgroup,
+.popover-wanteeed menu, .popover-wanteeed nav, .popover-wanteeed output, .popover-wanteeed ruby, .popover-wanteeed section, .popover-wanteeed summary,
+.popover-wanteeed time, .popover-wanteeed mark, .popover-wanteeed audio, .popover-wanteeed video, .popover-wanteeed button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/*font-size: 100%;
+	font: inherit;*/
+	font:13px "Verdana", sans-serif;
+	text-align:left;
+	vertical-align: baseline;
+	-webkit-box-shadow: none;
+	-webkit-box-sizing:initial;
+	box-sizing:initial;
+	box-shadow: none;
+	color:#555555;
+	text-transform:none;
+	background:none;
+	bottom:inherit ;
+}
+/* HTML5 display-role reset for older browsers *//*
+.popover-wanteeed article, .popover-wanteeed aside, .popover-wanteeed details, .popover-wanteeed figcaption, .popover-wanteeed figure,
+.popover-wanteeed footer, .popover-wanteeed header, .popover-wanteeed hgroup, .popover-wanteeed menu, .popover-wanteeed nav, .popover-wanteeed section {
+	display: block;
+}
+.popover-wanteeed body {
+	line-height: 1;
+}
+.popover-wanteeed ol, .popover-wanteeed ul {
+	list-style: none;
+}
+.popover-wanteeed blockquote, .popover-wanteeed q {
+	quotes: none;
+}
+.popover-wanteeed blockquote:before, .popover-wanteeed blockquote:after,
+.popover-wanteeed q:before, .popover-wanteeed q:after {
+	content: '';
+	content: none;
+}
+.popover-wanteeed table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}*/
+
+
+
+.popover-wanteeed .btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.popover-wanteeed .btn:focus,
+.popover-wanteeed .btn:active:focus,
+.popover-wanteeed .btn.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.popover-wanteeed .btn:hover,
+.popover-wanteeed .btn:focus {
+  color: #333333;
+  text-decoration: none;
+}
+.popover-wanteeed .btn:active,
+.popover-wanteeed .btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.popover-wanteeed .btn.disabled,
+.popover-wanteeed .btn[disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.popover-wanteeed .btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.popover-wanteeed .btn-default:hover,
+.popover-wanteeed .btn-default:focus,
+.popover-wanteeed .btn-default:active,
+.popover-wanteeed .btn-default.active,
+.popover-wanteeed .open > .dropdown-toggle.btn-default {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.popover-wanteeed .btn-default:active,
+.popover-wanteeed .btn-default.active,
+.popover-wanteeed .open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.popover-wanteeed .btn-default.disabled,
+.popover-wanteeed .btn-default[disabled],
+.popover-wanteeed fieldset[disabled] .btn-default,
+.popover-wanteeed .btn-default.disabled:hover,
+.popover-wanteeed .btn-default[disabled]:hover,
+.popover-wanteeed fieldset[disabled] .btn-default:hover,
+.popover-wanteeed .btn-default.disabled:focus,
+.popover-wanteeed .btn-default[disabled]:focus,
+.popover-wanteeed fieldset[disabled] .btn-default:focus,
+.popover-wanteeed .btn-default.disabled:active,
+.popover-wanteeed .btn-default[disabled]:active,
+.popover-wanteeed fieldset[disabled] .btn-default:active,
+.popover-wanteeed .btn-default.disabled.active,
+.popover-wanteeed .btn-default[disabled].active,
+.popover-wanteeed fieldset[disabled] .btn-default.active {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.popover-wanteeed .btn-default .badge {
+  color: #ffffff;
+  background-color: #333333;
+}
+.popover-wanteeed .btn-primary {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.popover-wanteeed .btn-primary:hover,
+.popover-wanteeed .btn-primary:focus,
+.popover-wanteeed .btn-primary:active,
+.popover-wanteeed .btn-primary.active,
+.popover-wanteeed .open > .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #3071a9;
+  border-color: #285e8e;
+}
+.popover-wanteeed .btn-primary:active,
+.popover-wanteeed .btn-primary.active,
+.popover-wanteeed .open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.popover-wanteeed .btn-primary.disabled,
+.popover-wanteeed .btn-primary[disabled],
+.popover-wanteeed fieldset[disabled] .btn-primary,
+.popover-wanteeed .btn-primary.disabled:hover,
+.popover-wanteeed .btn-primary[disabled]:hover,
+.popover-wanteeed fieldset[disabled] .btn-primary:hover,
+.popover-wanteeed .btn-primary.disabled:focus,
+.popover-wanteeed .btn-primary[disabled]:focus,
+.popover-wanteeed fieldset[disabled] .btn-primary:focus,
+.popover-wanteeed .btn-primary.disabled:active,
+.popover-wanteeed .btn-primary[disabled]:active,
+.popover-wanteeed fieldset[disabled] .btn-primary:active,
+.popover-wanteeed .btn-primary.disabled.active,
+.popover-wanteeed .btn-primary[disabled].active,
+.popover-wanteeed fieldset[disabled] .btn-primary.active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.popover-wanteeed .btn-primary .badge {
+  color: #428bca;
+  background-color: #ffffff;
+}
+.popover-wanteeed .btn-success {
+  color: #ffffff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.popover-wanteeed .btn-success:hover,
+.popover-wanteeed .btn-success:focus,
+.popover-wanteeed .btn-success:active,
+.popover-wanteeed .btn-success.active,
+.popover-wanteeed .open > .dropdown-toggle.btn-success {
+  color: #ffffff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.popover-wanteeed .btn-success:active,
+.popover-wanteeed .btn-success.active,
+.popover-wanteeed .open > .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.popover-wanteeed .btn-success.disabled,
+.popover-wanteeed .btn-success[disabled],
+.popover-wanteeed fieldset[disabled] .btn-success,
+.popover-wanteeed .btn-success.disabled:hover,
+.popover-wanteeed .btn-success[disabled]:hover,
+.popover-wanteeed fieldset[disabled] .btn-success:hover,
+.popover-wanteeed .btn-success.disabled:focus,
+.popover-wanteeed .btn-success[disabled]:focus,
+.popover-wanteeed fieldset[disabled] .btn-success:focus,
+.popover-wanteeed .btn-success.disabled:active,
+.popover-wanteeed .btn-success[disabled]:active,
+.popover-wanteeed fieldset[disabled] .btn-success:active,
+.popover-wanteeed .btn-success.disabled.active,
+.popover-wanteeed .btn-success[disabled].active,
+.popover-wanteeed fieldset[disabled] .btn-success.active {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.popover-wanteeed .btn-success .badge {
+  color: #5cb85c;
+  background-color: #ffffff;
+}
+.popover-wanteeed .btn-info {
+  color: #ffffff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.popover-wanteeed .btn-info:hover,
+.popover-wanteeed .btn-info:focus,
+.popover-wanteeed .btn-info:active,
+.popover-wanteeed .btn-info.active,
+.popover-wanteeed .open > .dropdown-toggle.btn-info {
+  color: #ffffff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.popover-wanteeed .btn-info:active,
+.popover-wanteeed .btn-info.active,
+.popover-wanteeed .open > .dropdown-toggle.btn-info {
+  background-image: none;
+}
+.popover-wanteeed .btn-info.disabled,
+.popover-wanteeed .btn-info[disabled],
+.popover-wanteeed fieldset[disabled] .btn-info,
+.popover-wanteeed .btn-info.disabled:hover,
+.popover-wanteeed .btn-info[disabled]:hover,
+.popover-wanteeed fieldset[disabled] .btn-info:hover,
+.popover-wanteeed .btn-info.disabled:focus,
+.popover-wanteeed .btn-info[disabled]:focus,
+.popover-wanteeed fieldset[disabled] .btn-info:focus,
+.popover-wanteeed .btn-info.disabled:active,
+.popover-wanteeed .btn-info[disabled]:active,
+.popover-wanteeed fieldset[disabled] .btn-info:active,
+.popover-wanteeed .btn-info.disabled.active,
+.popover-wanteeed .btn-info[disabled].active,
+.popover-wanteeed fieldset[disabled] .btn-info.active {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.popover-wanteeed .btn-info .badge {
+  color: #5bc0de;
+  background-color: #ffffff;
+}
+.popover-wanteeed .btn-warning {
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.popover-wanteeed .btn-warning:hover,
+.popover-wanteeed .btn-warning:focus,
+.popover-wanteeed .btn-warning:active,
+.popover-wanteeed .btn-warning.active,
+.popover-wanteeed .open > .dropdown-toggle.btn-warning {
+  color: #ffffff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.popover-wanteeed .btn-warning:active,
+.popover-wanteeed .btn-warning.active,
+.popover-wanteeed .open > .dropdown-toggle.btn-warning {
+  background-image: none;
+}
+.popover-wanteeed .btn-warning.disabled,
+.popover-wanteeed .btn-warning[disabled],
+.popover-wanteeed fieldset[disabled] .btn-warning,
+.popover-wanteeed .btn-warning.disabled:hover,
+.popover-wanteeed .btn-warning[disabled]:hover,
+.popover-wanteeed fieldset[disabled] .btn-warning:hover,
+.popover-wanteeed .btn-warning.disabled:focus,
+.popover-wanteeed .btn-warning[disabled]:focus,
+.popover-wanteeed fieldset[disabled] .btn-warning:focus,
+.popover-wanteeed .btn-warning.disabled:active,
+.popover-wanteeed .btn-warning[disabled]:active,
+.popover-wanteeed fieldset[disabled] .btn-warning:active,
+.popover-wanteeed .btn-warning.disabled.active,
+.popover-wanteeed .btn-warning[disabled].active,
+.popover-wanteeed fieldset[disabled] .btn-warning.active {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.popover-wanteeed .btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #ffffff;
+}
+.popover-wanteeed .btn-danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.popover-wanteeed .btn-danger:hover,
+.popover-wanteeed .btn-danger:focus,
+.popover-wanteeed .btn-danger:active,
+.popover-wanteeed .btn-danger.active,
+.popover-wanteeed .open > .dropdown-toggle.btn-danger {
+  color: #ffffff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.popover-wanteeed .btn-danger:active,
+.popover-wanteeed .btn-danger.active,
+.popover-wanteeed .open > .dropdown-toggle.btn-danger {
+  background-image: none;
+}
+.popover-wanteeed .btn-danger.disabled,
+.popover-wanteeed .btn-danger[disabled],
+.popover-wanteeed fieldset[disabled] .btn-danger,
+.popover-wanteeed .btn-danger.disabled:hover,
+.popover-wanteeed .btn-danger[disabled]:hover,
+.popover-wanteeed fieldset[disabled] .btn-danger:hover,
+.popover-wanteeed .btn-danger.disabled:focus,
+.popover-wanteeed .btn-danger[disabled]:focus,
+.popover-wanteeed fieldset[disabled] .btn-danger:focus,
+.popover-wanteeed .btn-danger.disabled:active,
+.popover-wanteeed .btn-danger[disabled]:active,
+.popover-wanteeed fieldset[disabled] .btn-danger:active,
+.popover-wanteeed .btn-danger.disabled.active,
+.popover-wanteeed .btn-danger[disabled].active,
+.popover-wanteeed fieldset[disabled] .btn-danger.active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.popover-wanteeed .btn-danger .badge {
+  color: #d9534f;
+  background-color: #ffffff;
+}
+.popover-wanteeed .btn-link {
+  color: #428bca;
+  font-weight: normal;
+  cursor: pointer;
+  border-radius: 0;
+}
+.popover-wanteeed .btn-link,
+.popover-wanteeed .btn-link:active,
+.popover-wanteeed .btn-link[disabled],
+.popover-wanteeed fieldset[disabled] .btn-link {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.popover-wanteeed .btn-link,
+.popover-wanteeed .btn-link:hover,
+.popover-wanteeed .btn-link:focus,
+.popover-wanteeed .btn-link:active {
+  border-color: transparent;
+}
+.popover-wanteeed .btn-link:hover,
+.popover-wanteeed .btn-link:focus {
+  color: #2a6496;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.popover-wanteeed .btn-link[disabled]:hover,
+.popover-wanteeed fieldset[disabled] .btn-link:hover,
+.popover-wanteeed .btn-link[disabled]:focus,
+.popover-wanteeed fieldset[disabled] .btn-link:focus {
+  color: #777777;
+  text-decoration: none;
+}
+.popover-wanteeed .btn-lg,
+.popover-wanteeed .btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.popover-wanteeed .btn-sm,
+.popover-wanteeed .btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.popover-wanteeed .btn-xs,
+.popover-wanteeed btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.popover-wanteeed .btn-block {
+  display: block;
+  width: 100%;
+}
+.popover-wanteeed .btn-block + .btn-block {
+  margin-top: 5px;
+}
+.popover-wanteeed input[type="submit"].btn-block,
+.popover-wanteeed input[type="reset"].btn-block,
+.popover-wanteeed input[type="button"].btn-block {
+  width: 100%;
+}
+.popover-wanteeed .btn-group,
+.popover-wanteeed .btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.popover-wanteeed .btn-group > .btn,
+.popover-wanteeed .btn-group-vertical > .btn {
+  position: relative;
+  float: left;
+}
+.popover-wanteeed .btn-group > .btn:hover,
+.popover-wanteeed .btn-group-vertical > .btn:hover,
+.popover-wanteeed .btn-group > .btn:focus,
+.popover-wanteeed .btn-group-vertical > .btn:focus,
+.popover-wanteeed .btn-group > .btn:active,
+.popover-wanteeed .btn-group-vertical > .btn:active,
+.popover-wanteeed .btn-group > .btn.active,
+.popover-wanteeed .btn-group-vertical > .btn.active {
+  z-index: 2;
+}
+.popover-wanteeed .btn-group > .btn:focus,
+.popover-wanteeed .btn-group-vertical > .btn:focus {
+  outline: 0;
+}
+.popover-wanteeed .btn-group .btn + .btn,
+.popover-wanteeed .btn-group .btn + .btn-group,
+.popover-wanteeed .btn-group .btn-group + .btn,
+.popover-wanteeed .btn-group .btn-group + .btn-group {
+  margin-left: -1px;
+}
+.popover-wanteeed .btn-toolbar {
+  margin-left: -5px;
+}
+.popover-wanteeed .btn-toolbar .btn-group,
+.popover-wanteeed .btn-toolbar .input-group {
+  float: left;
+}
+.popover-wanteeed .btn-toolbar > .btn,
+.popover-wanteeed .btn-toolbar > .btn-group,
+.popover-wanteeed .btn-toolbar > .input-group {
+  margin-left: 5px;
+}
+.popover-wanteeed .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  border-radius: 0;
+}
+.popover-wanteeed .btn-group > .btn:first-child {
+  margin-left: 0;
+}
+.popover-wanteeed .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.popover-wanteeed .btn-group > .btn:last-child:not(:first-child),
+.popover-wanteeed .btn-group > .dropdown-toggle:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.popover-wanteeed .btn-group > .btn-group {
+  float: left;
+}
+.popover-wanteeed .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+  border-radius: 0;
+}
+.popover-wanteeed .btn-group > .btn-group:first-child > .btn:last-child,
+.popover-wanteeed .btn-group > .btn-group:first-child > .dropdown-toggle {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.popover-wanteeed .btn-group > .btn-group:last-child > .btn:first-child {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.popover-wanteeed .btn-group .dropdown-toggle:active,
+.popover-wanteeed .btn-group.open .dropdown-toggle {
+  outline: 0;
+}
+.popover-wanteeed .btn-group > .btn + .dropdown-toggle {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.popover-wanteeed .btn-group > .btn-lg + .dropdown-toggle {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.popover-wanteeed .btn-group.open .dropdown-toggle {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.popover-wanteeed .btn-group.open .dropdown-toggle.btn-link {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.popover-wanteeed .btn .caret {
+  margin-left: 0;
+}
+.popover-wanteeed .btn-lg .caret {
+  border-width: 5px 5px 0;
+  border-bottom-width: 0;
+}
+.popover-wanteeed .dropup .btn-lg .caret {
+  border-width: 0 5px 5px;
+}
+.popover-wanteeed .btn-group-vertical > .btn,
+.popover-wanteeed .btn-group-vertical > .btn-group,
+.popover-wanteeed .btn-group-vertical > .btn-group > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+}
+.popover-wanteeed .btn-group-vertical > .btn-group > .btn {
+  float: none;
+}
+.popover-wanteeed .btn-group-vertical > .btn + .btn,
+.popover-wanteeed .btn-group-vertical > .btn + .btn-group,
+.popover-wanteeed .btn-group-vertical > .btn-group + .btn,
+.popover-wanteeed .btn-group-vertical > .btn-group + .btn-group {
+  margin-top: -1px;
+  margin-left: 0;
+}
+.popover-wanteeed .btn-group-vertical > .btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.popover-wanteeed .btn-group-vertical > .btn:first-child:not(:last-child) {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.popover-wanteeed .btn-group-vertical > .btn:last-child:not(:first-child) {
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.popover-wanteeed .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+  border-radius: 0;
+}
+.popover-wanteeed .btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child,
+.popover-wanteeed .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.popover-wanteeed .btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.popover-wanteeed .btn-group-justified {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+.popover-wanteeed .btn-group-justified > .btn,
+.popover-wanteeed .btn-group-justified > .btn-group {
+  float: none;
+  display: table-cell;
+  width: 1%;
+}
+.popover-wanteeed .btn-group-justified > .btn-group .btn {
+  width: 100%;
+}
+.popover-wanteeed .btn-group-justified > .btn-group .dropdown-menu {
+  left: auto;
+}
+.popover-wanteeed [data-toggle="buttons"] > .btn > input[type="radio"],
+.popover-wanteeed [data-toggle="buttons"] > .btn > input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.popover-wanteeed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  text-align: left;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  white-space: normal;
+  bottom:inherit ;
+}
+.popover-wanteeed.top {
+  margin-top: -10px;
+}
+.popover-wanteeed.right {
+  margin-left: 10px;
+}
+.popover-wanteeed.bottom {
+  margin-top: 10px;
+}
+.popover-wanteeed.left {
+  margin-left: -10px;
+}
+.popover-wanteeed .popover-title {
+  margin: 0;
+  padding: 8px 14px ;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+  text-align:center;
+}
+.popover-wanteeed .popover-content {
+  padding: 9px 14px;
+}
+.popover-wanteeed > .arrow,
+.popover-wanteeed > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.popover-wanteeed > .arrow {
+  border-width: 11px;
+}
+.popover-wanteeed > .arrow:after {
+  border-width: 10px;
+  content: "";
+}
+.popover-wanteeed.top > .arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-bottom-width: 0;
+  border-top-color: #999999;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  bottom: -11px;
+}
+.popover-wanteeed.top > .arrow:after {
+  content: " ";
+  bottom: 1px;
+  margin-left: -10px;
+  border-bottom-width: 0;
+  border-top-color: #ffffff;
+}
+.popover-wanteeed.right > .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-left-width: 0;
+  border-right-color: #999999;
+  border-right-color: rgba(0, 0, 0, 0.25);
+}
+.popover-wanteeed.right > .arrow:after {
+  content: " ";
+  left: 1px;
+  bottom: -10px;
+  border-left-width: 0;
+  border-right-color: #ffffff;
+}
+.popover-wanteeed.bottom > .arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #999999;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  top: -11px;
+}
+.popover-wanteeed.bottom > .arrow:after {
+  content: " ";
+  top: 1px;
+  margin-left: -10px;
+  border-top-width: 0;
+  border-bottom-color: #ffffff;
+}
+.popover-wanteeed.left > .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: #999999;
+  border-left-color: rgba(0, 0, 0, 0.25);
+}
+.popover-wanteeed.left > .arrow:after {
+  content: " ";
+  right: 1px;
+  border-right-width: 0;
+  border-left-color: #ffffff;
+  bottom: -10px;
+}
+.tour-backdrop-wanteeed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1999998;
+  background-color: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.tour-step-backdrop-wanteeed {
+  position: relative;
+  z-index: 1999999;
+  background: inherit;
+}
+.tour-step-backdrop-wanteeed > td {
+  position: relative;
+  z-index: 1999999;
+}
+.tour-step-background-wanteeed {
+  position: absolute !important;
+  z-index: 1999998;
+  background: inherit;
+  border-radius: 6px;
+}
+.popover-wanteeed[class*="tour-"] {
+  z-index: 1999999;/* 1100;*/
+}
+.popover-wanteeed[class*="tour-"] .popover-navigation {
+  padding: 9px 14px;
+}
+.popover-wanteeed[class*="tour-"] .popover-navigation *[data-role="end"] {
+  float: right;
+}
+.popover-wanteeed[class*="tour-"] .popover-navigation *[data-role="prev"],
+.popover-wanteeed[class*="tour-"] .popover-navigation *[data-role="next"],
+.popover-wanteeed[class*="tour-"] .popover-navigation *[data-role="end"] {
+  cursor: pointer;
+}
+.popover-wanteeed[class*="tour-"] .popover-navigation *[data-role="prev"].disabled,
+.popover-wanteeed[class*="tour-"] .popover-navigation *[data-role="next"].disabled,
+.popover-wanteeed[class*="tour-"] .popover-navigation *[data-role="end"].disabled {
+  cursor: default;
+}
+.popover-wanteeed[class*="tour-"].orphan {
+  position: fixed;
+  margin-top: 0;
+}
+.popover-wanteeed[class*="tour-"].orphan .arrow {
+  display: none;
+}
+</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax:focus, body :focus .MathJax {display: inline-table}
+.MathJax.MathJax_FullWidth {text-align: center; display: table-cell!important; width: 10000em!important}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
+.MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
+.MathJax_LineBox {display: table!important}
+.MathJax_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Main; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Main-bold; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Main-italic; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Math-italic; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Caligraphic; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Size1; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Size2; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Size3; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Size4; src: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff?V=2.7.0') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf?V=2.7.0') format('opentype')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body style="transition: -webkit-transform 0.8s ease 0s;" class="vsc-initialized"><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div>
+  
+
+  <div class="reveal false has-vertical-slides has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="default" style="">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides" style="width: 960px; height: 700px; inset: 50% auto auto 50%; transform: translate(-50%, -50%) scale(0.563657);">
+
+      
+
+
+    
+        <section class="present" style="display: block;">
+            
+            <style>
+    .reveal section {
+    display: inline-block;
+    font-size: 0.6em;
+    line-height: 1.2em;
+    vertical-align: top;
+    text-align: left;
+  }
+  .reveal section h1 {
+      color: blue;
+      font-size: 4em;
+      text-align:center;
+  }
+  .reveal section h2 {
+      color: green;
+      font-size: 2em;
+      text-align:center;
+  }
+</style>
+<h1><a id="user-content-maven" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#maven" aria-hidden="true"></a>Maven</h1>
+<h2><a id="user-content-agl" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#agl" aria-hidden="true"></a>AGL</h2>
+<h2><a id="user-content-2021-2022" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#2021-2022" aria-hidden="true"></a>2021-2022</h2>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: block;">
+            
+            <h1><a id="user-content-introduction" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#introduction" aria-hidden="true"></a>Introduction</h1>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: block;">
+            
+            <h2><a id="user-content-origines-motivation" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#origines-motivation" aria-hidden="true"></a>Origines, motivation</h2>
+<p>Des problèmes/tâches récurrent(e)s lors de la construction d’un projet :</p>
+<ul>
+<li>Organiser son projet:
+<ul>
+<li>structuration en répertoires, nommage, emplacement des fichiers,</li>
+</ul>
+</li>
+<li>Compiler</li>
+<li>exécuter les tests</li>
+<li>construire les artefacts : war, jar ou ear …</li>
+<li>déployer</li>
+<li>construire des rapports qualimétriques</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-origines" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#origines" aria-hidden="true"></a>Origines</h2>
+<ul>
+<li>Maven est un mot d’origine yiddish signifiant “accumulateur de savoirs”</li>
+<li>Maven est issu de la fondation Apache
+<ul>
+<li>Pour unifier les pratiques de construction (build) du projet Jakarta Turbine (framework de création rapide d’applications web)</li>
+<li>Maven 1 : 2003</li>
+<li>Actuellement Maven 3</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-objectifs" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#objectifs" aria-hidden="true"></a>Objectifs</h2>
+<ul>
+<li>Accelérer la prise en main d’un projet et des tâches de développement  :
+<ul>
+<li>faciliter le processus de build</li>
+<li>fournir un système de build uniform
+<ul>
+<li>build via le POM (Project Object Model) + un ensemble de plugins</li>
+</ul>
+</li>
+<li>fournir des informations sur le projet, par exemple :
+<ul>
+<li>les dépendances utilisées par le projet</li>
+<li>change log (branchement avec le gestionnaire de code)</li>
+<li>rapports de tests unitaires (incluant la couverture de code)</li>
+</ul>
+</li>
+<li>encourager de meilleures pratiques de développemement
+<ul>
+<li>l’exécution et le reporting de test unitaire fait partie du cycle de build standard en Maven</li>
+<li>organisation de la structure de répertoires du projet
+<img src="./AGL1title_files/devops.png" alt="devops"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-pourquoi-utiliser-maven--gestion-des-dépendances" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#pourquoi-utiliser-maven--gestion-des-d%C3%A9pendances" aria-hidden="true"></a>Pourquoi utiliser Maven ? Gestion des dépendances</h2>
+<ul>
+<li>Permettre à un développeur de construire un projet (par exemple pour une nouvelles tâche de développement) va au delà de lui donner le code
+<ul>
+<li>n’oublie pas d’utiliser Java 11 au minimum</li>
+<li>ah oui et il faut avoir mockito installé pour les tests</li>
+<li>ça ne marche pas ? tu as bien la version 5 de Junit ?</li>
+<li>tu es sûr que tu as bien la version 2.27 de jersey pour les services REST ?</li>
+</ul>
+</li>
+<li>Maven gère les dépendances du projet :
+<ul>
+<li>les dépendances sont déclarées dans le projet</li>
+<li>si elles ne sont pas présentes dans le projet, Maven les télécharge (et aussi les dépendances transitives)</li>
+<li>Maven a un large dépôt (repository) auquel se référer</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-pourquoi-utiliser-maven---cycle-de-vie" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#pourquoi-utiliser-maven---cycle-de-vie" aria-hidden="true"></a>Pourquoi utiliser Maven ?  Cycle de vie</h2>
+<ul>
+<li>Permettre la construction des différents artéfacts du projet :
+<ul>
+<li>le logiciel issu du build (jar, war, ear, etc)</li>
+<li>le site du projet</li>
+<li>des rapports de test (yc de couverture)</li>
+<li>…</li>
+</ul>
+</li>
+<li>Pouvoir facilement inclure dans les phases de construction des phases de test, d’analyse de code en utilisant les plugins dédiés</li>
+<li>Aller facilement vers de l’intégration continue</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-pom-pom-pom-" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#pom-pom-pom-" aria-hidden="true"></a>Pom pom pom …</h2>
+<ul>
+<li>La configuration du projet est centralisée dans un fichier appelé Project Object Model, autrement le pom</li>
+<li>C’est un fichier … en XML (ne pas oublier que Maven est né en 2003)</li>
+<li>On y déclare les dépendances, les plugins utilisés, etc</li>
+<li>On peut avoir une hiérarchie de pom …</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-intégration-de-maven-dans-les-ide" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#int%C3%A9gration-de-maven-dans-les-ide" aria-hidden="true"></a>Intégration de Maven dans les IDE</h2>
+<ul>
+<li>Intégration de Maven dans tous les IDE majeurs java
+<ul>
+<li>nativement</li>
+<li>ou via des extensions</li>
+</ul>
+</li>
+<li>Fonctionnalités
+<ul>
+<li>facilitation de l’édition de pom
+<ul>
+<li>effective pom,</li>
+<li>ajout de dépendance par clic, génération de la portion de pom correspondante</li>
+<li>détection des erreurs syntaxiques</li>
+</ul>
+</li>
+<li>lancement des commandes Maven par clic (moins intéressant)</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-maven-et-les-autres" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#maven-et-les-autres" aria-hidden="true"></a>Maven et les autres</h2>
+<ul>
+<li>make
+<ul>
+<li>outil historique (~1996)</li>
+<li>bcp - de fonctionnalités que les autres …</li>
+</ul>
+</li>
+<li>ant (~2000, initialement projet Apache)
+<ul>
+<li>pour Java mais pas que</li>
+<li>config xml</li>
+<li>phase du cycle de build = target</li>
+<li>flexible,  n’impose aucune convention ni structure de code</li>
+<li>bcp de choses à faire “à la main”, pas de gestion des dépendances</li>
+</ul>
+</li>
+<li>gradle (~2007)
+<ul>
+<li>construit sur les concepts de maven et ant</li>
+<li>DSL basé groovy ou kotlin</li>
+<li>moins utilisé que Maven (logique) mais de + en + (ex Spring)</li>
+<li>plus rapide que Maven</li>
+<li>plus souple que Maven</li>
+<li>mais apprentissage plus long</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h1><a id="user-content-cycle-de-vie-du-build-phases-plugins-goals" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#cycle-de-vie-du-build-phases-plugins-goals" aria-hidden="true"></a>Cycle de vie du build, phases, plugins, goals</h1>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-cycle-de-vie-du-build-build-lifecycle" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#cycle-de-vie-du-build-build-lifecycle" aria-hidden="true"></a>Cycle de vie du build (build lifecycle)</h2>
+<ul>
+<li>
+<p>Le build Maven suit un cycle de vie pour déployer et distribuer un projet.</p>
+</li>
+<li>
+<p>Il y a 3 cycles de vie prédéfinis :</p>
+<ul>
+<li>default : cycle de vie principal = deployement du projet</li>
+<li>clean : nettoie le projet (supprimer les fichiers générés lors du précédent build)</li>
+<li>site : pour créer le site contenant la documentation du projet</li>
+</ul>
+</li>
+<li>
+<p>Chaque cycle de vie est une séquence de phases</p>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-phases" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#phases" aria-hidden="true"></a>Phases</h2>
+<ul>
+<li>
+<p>Une phase est une étape du cyle de vie.</p>
+</li>
+<li>
+<p>Les phases d’un cycle sont exécutées en séquence.</p>
+<ul>
+<li>pour exécuter la phase n, il y a nécessairement au préalable exéution des n-1 phases précédentes (celles associées à au moins un goal)</li>
+</ul>
+</li>
+<li>
+<p>Le cycle de vie default contient 23 phases, dont les principales sont :</p>
+<ul>
+<li>validate: vérification que toutes les infos nécessaires au build sont présentes</li>
+<li>compile: compilation du code source</li>
+<li>test-compile : compilation du code source de test</li>
+<li>test : exécution des tests unitaires</li>
+<li>package : packaging du code compilé en un format distribuable (jar, war, …)</li>
+<li>verify : lancement de vérifications sur les résultats des test d’intégration pour s’assurer que les critères de qualité sont satisfaits</li>
+<li>install : installation du package dans le dépôt local (pour utilisation locale par d’autres projets)</li>
+<li>deploy : copie le package vers un dépôt distant</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-plugins-et-goals" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#plugins-et-goals" aria-hidden="true"></a>Plugins et goals</h2>
+<ul>
+<li>Chaque plugin définit des goals</li>
+<li>Les goals peuvent être associés aux phases du cycle de vie</li>
+<li>Exemple. Le plugin compiler a comme goals :
+<ul>
+<li>compile</li>
+<li>test-compile</li>
+<li>help</li>
+</ul>
+</li>
+<li>notation d’un goal
+<ul>
+<li>plugin:goal</li>
+<li>ex : compiler:compile</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-vue-densemble" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#vue-densemble" aria-hidden="true"></a>Vue d’ensemble</h2>
+<p><img src="./AGL1title_files/classDiagram.jpeg" alt="" width="250"></p>
+<ul>
+<li>une phase qui n’est associée à aucun goal n’est pas exécutée</li>
+<li>une phase avec plusieurs goals les exécute en séquence</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-associations-entre-phases-et-goals" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#associations-entre-phases-et-goals" aria-hidden="true"></a>Associations entre phases et goals</h2>
+<h3><a id="user-content-spécifier-le-packaging" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#sp%C3%A9cifier-le-packaging" aria-hidden="true"></a>spécifier le packaging</h3>
+<ul>
+<li>Spécifier le packaging visé (par défaut : jar)</li>
+<li>Chaque packaging vient associer certaines phases à certains goals.</li>
+<li>par exemple le packaging jar définit les associations suivantes :</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Phase</th>
+<th style="text-align:center">plugin:goal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">process-resources</td>
+<td style="text-align:center">resources:resources</td>
+</tr>
+<tr>
+<td style="text-align:center">compile</td>
+<td style="text-align:center">compiler:compile</td>
+</tr>
+<tr>
+<td style="text-align:center">process-test-resources</td>
+<td style="text-align:center">resources:testResources</td>
+</tr>
+<tr>
+<td style="text-align:center">test-compile</td>
+<td style="text-align:center">compiler:testCompile</td>
+</tr>
+<tr>
+<td style="text-align:center">test</td>
+<td style="text-align:center">surefire:test</td>
+</tr>
+<tr>
+<td style="text-align:center">package</td>
+<td style="text-align:center">jar:jar</td>
+</tr>
+<tr>
+<td style="text-align:center">install</td>
+<td style="text-align:center">install:install</td>
+</tr>
+<tr>
+<td style="text-align:center">deploy</td>
+<td style="text-align:center">deploy:deploy</td>
+</tr>
+</tbody>
+</table>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-associations-entre-phases-et-goals-1" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#associations-entre-phases-et-goals-1" aria-hidden="true"></a>Associations entre phases et goals</h2>
+<h3><a id="user-content-utiliser-des-plugins-additionnels" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#utiliser-des-plugins-additionnels" aria-hidden="true"></a>utiliser des plugins additionnels</h3>
+<ul>
+<li>Un plugin Maven fournit des goals supplémentaires</li>
+<li>Les goals d’un plugin sont associés aux phases du cycle de vie
+<ul>
+<li>manuellement via le POM</li>
+<li>éventuellement le plugin définit des associations par défaut</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-associations-entre-phases-et-goals-2" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#associations-entre-phases-et-goals-2" aria-hidden="true"></a>Associations entre phases et goals</h2>
+<h3><a id="user-content-configurer-des-plugins" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#configurer-des-plugins" aria-hidden="true"></a>configurer des plugins</h3>
+<ul>
+<li>Les plugins sont configurables</li>
+<li>La configuration se fait dans le POM</li>
+<li>Souvent le plugin définit une configuration par défaut</li>
+<li>Exemples :
+<ul>
+<li>configuration des versions des dépendances à utiliser</li>
+<li>configuration du port à utiliser pour un serveur à lancer pour les tests</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h1><a id="user-content-premier-projet-maven" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#premier-projet-maven" aria-hidden="true"></a>Premier projet Maven</h1>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-création-dun-projet-via-le-plugin-archetype" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#cr%C3%A9ation-dun-projet-via-le-plugin-archetype" aria-hidden="true"></a>Création d’un projet via le plugin archetype</h2>
+<ul>
+<li>archetype est un plugin permettant la création de projets maven types.</li>
+</ul>
+<!--<pre><code data-trim class="bash"> -->
+<pre><code class="language-bash hljs"><span class="line">mvn archetype:generate <span class="hljs-comment"># invocation de maven, goal generate de archetype</span></span><span class="line">-DgroupId=fr.umfds.agl <span class="hljs-comment"># id/nom du groupe </span></span><span class="line">-DartifactId=mon-projet <span class="hljs-comment"># id/nom court du projet</span></span><span class="line">-DarchetypeArtifactId=maven-archetype-quickstart <span class="hljs-comment"># modèle quickstart (le plus simple)</span></span><span class="line">-DinteractiveMode=<span class="hljs-literal">false</span> <span class="hljs-comment"># le mode interactif pose des questions plutôt que de devoir tout mettre en paramètres comme ici</span></span></code></pre>
+<ul>
+<li>autres options possibles, ce qui n’est pas spécifié est mis avec des valeurs par défaut</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-hiérarchie-de-fichiers-obtenue" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#hi%C3%A9rarchie-de-fichiers-obtenue" aria-hidden="true"></a>Hiérarchie de fichiers obtenue</h2>
+<pre><code class="language-text"><span class="line">└── mon-projet</span><span class="line">    ├── pom.xml</span><span class="line">    └── src</span><span class="line">        ├── main</span><span class="line">        │&nbsp;&nbsp; └── java</span><span class="line">        │&nbsp;&nbsp;     └── fr</span><span class="line">        │&nbsp;&nbsp;         └── umfds</span><span class="line">        │&nbsp;&nbsp;             └── agl</span><span class="line">        │&nbsp;&nbsp;                 └── App.java</span><span class="line">        └── test</span><span class="line">            └── java</span><span class="line">                └── fr</span><span class="line">                    └── umfds</span><span class="line">                        └── agl</span><span class="line">                            └── AppTest.java</span><span class="line">&nbsp;</span></code></pre>
+<ul>
+<li>Deux hiérarchies parallèles : l’une pour le code du projet, l’autre pour le test</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-premier-pom" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#premier-pom" aria-hidden="true"></a>Premier POM</h2>
+<pre><code class="language-xml hljs"><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">project</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0"</span> <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><span class="line"><span class="hljs-tag">  <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">modelVersion</span>&gt;</span>4.0.0<span class="hljs-tag">&lt;/<span class="hljs-name">modelVersion</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>fr.umfds.agl<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>mon-projet<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">packaging</span>&gt;</span>jar<span class="hljs-tag">&lt;/<span class="hljs-name">packaging</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0-SNAPSHOT<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>mon-projet<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">url</span>&gt;</span>http://maven.apache.org<span class="hljs-tag">&lt;/<span class="hljs-name">url</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span></span><span class="line">      <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><span class="line">      <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><span class="line">      <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>3.8.1<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><span class="line">      <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span></span><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">project</span>&gt;</span></span></code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-pom--carte-didentité-minimale-du-projet" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#pom--carte-didentit%C3%A9-minimale-du-projet" aria-hidden="true"></a>POM : carte d’identité minimale du projet</h2>
+<ul>
+<li>
+<p>élément &lt;project&gt; : racine du pom</p>
+<ul>
+<li>modelVersion :  4.0.0 (version du POM pour maven 2 et 3)</li>
+<li>groupId : id (sans espace) du groupe du projet</li>
+<li>artifactId : id (sans espace) du projet</li>
+<li>version :  version du projet dans le groupe</li>
+</ul>
+</li>
+<li>
+<p>le nom “fully qualified” d’un projet est :</p>
+</li>
+</ul>
+<p>&lt;groupId&gt;:&lt;artifactId&gt;:&lt;version&gt;</p>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-pom--première-rencontre-avec-les-dependencies" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#pom--premi%C3%A8re-rencontre-avec-les-dependencies" aria-hidden="true"></a>POM : première rencontre avec les dependencies</h2>
+<pre><code class="language-xml hljs"><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span></span><span class="line">      <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><span class="line">      <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><span class="line">      <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>3.8.1<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><span class="line">      <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span></span></code></pre>
+<ul>
+<li>Déclaration des dépendances avec des éléments externes</li>
+<li>ici : JUnit 3.8.1
+<ul>
+<li>😱 mais c’est quoi cette version de JUnit ?</li>
+</ul>
+</li>
+<li>Pour déclarer une dépendance, on utilise la carte d’identité minimale de la dépendance : groupId, artifactId, version</li>
+<li>Nous verrons plus loin qu’on évite de mettre ici “en dur” la version</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-pom--première-rencontre-avec-la-gestion-des-dépendances" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#pom--premi%C3%A8re-rencontre-avec-la-gestion-des-d%C3%A9pendances" aria-hidden="true"></a>POM : première rencontre avec la gestion des dépendances</h2>
+<ul>
+<li>Mais pourquoi déclarer une dépendance ?
+<ul>
+<li>Maven a un plugin dédié à la gestion des dépendances</li>
+<li>Ce plugin rend vraiment service !</li>
+</ul>
+</li>
+<li>Lors du build (phase …), Maven va regarder si la dépendance spécifiée existe dans le projet
+<ul>
+<li>si oui parfait</li>
+<li>sinon il la télécharge</li>
+</ul>
+</li>
+<li>Maven gère aussi les dépendances transitives</li>
+<li>Plus de détails plus tard.</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-premier-build-mvn-package" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#premier-build-mvn-package" aria-hidden="true"></a>Premier build, mvn package</h2>
+<pre><code class="language-bash hljs"><span class="line">mvn package</span><span class="line">mvn clean package</span></code></pre>
+<ul>
+<li>mvn package lance le build lifecycle default</li>
+<li>mvn clean package commence par faire un clean avant de lancer le build</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-premier-build-sortie" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#premier-build-sortie" aria-hidden="true"></a>Premier build, sortie</h2>
+<pre><code class="hljs yaml"><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-string">Scanning</span> <span class="hljs-string">for</span> <span class="hljs-string">projects...</span></span><span class="line"><span class="hljs-string">[INFO]</span> </span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-bullet">----------------------&lt;</span> <span class="hljs-string">fr.umfds.agl:mon-projet</span> <span class="hljs-string">&gt;-----------------------</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-string">Building</span> <span class="hljs-string">mon-projet</span> <span class="hljs-number">1.0</span><span class="hljs-bullet">-SNAPSHOT</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-bullet">--------------------------------[</span> <span class="hljs-string">jar</span> <span class="hljs-string">]---------------------------------</span></span><span class="line"><span class="hljs-string">[INFO]</span> </span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-meta">---</span> <span class="hljs-attr">maven-resources-plugin:2.6:resources</span> <span class="hljs-string">(default-resources)</span> <span class="hljs-string">@</span> <span class="hljs-string">mon-projet</span> <span class="hljs-meta">---</span></span><span class="line"><span class="hljs-string">[WARNING]</span> <span class="hljs-string">Using</span> <span class="hljs-string">platform</span> <span class="hljs-string">encoding</span> <span class="hljs-string">(UTF-8</span> <span class="hljs-string">actually)</span> <span class="hljs-string">to</span> <span class="hljs-string">copy</span> <span class="hljs-string">filtered</span> <span class="hljs-string">resources,</span> <span class="hljs-string">i.e.</span> <span class="hljs-string">build</span> <span class="hljs-string">is</span> <span class="hljs-string">platform</span> <span class="hljs-string">dependent!</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-string">skip</span> <span class="hljs-string">non</span> <span class="hljs-string">existing</span> <span class="hljs-string">resourceDirectory</span> <span class="hljs-string">/home/nebut/ENSEIGNEMENT/2021-2022/AGL/CoursMaven/mvnCL/mon-projet/src/main/resources</span></span><span class="line"><span class="hljs-string">[INFO]</span> </span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-meta">---</span> <span class="hljs-attr">maven-compiler-plugin:3.1:compile</span> <span class="hljs-string">(default-compile)</span> <span class="hljs-string">@</span> <span class="hljs-string">mon-projet</span> <span class="hljs-meta">---</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-string">Changes</span> <span class="hljs-string">detected</span> <span class="hljs-bullet">-</span> <span class="hljs-string">recompiling</span> <span class="hljs-string">the</span> <span class="hljs-string">module!</span></span><span class="line"><span class="hljs-string">[WARNING]</span> <span class="hljs-string">File</span> <span class="hljs-string">encoding</span> <span class="hljs-string">has</span> <span class="hljs-string">not</span> <span class="hljs-string">been</span> <span class="hljs-string">set,</span> <span class="hljs-string">using</span> <span class="hljs-string">platform</span> <span class="hljs-string">encoding</span> <span class="hljs-string">UTF-8,</span> <span class="hljs-string">i.e.</span> <span class="hljs-string">build</span> <span class="hljs-string">is</span> <span class="hljs-string">platform</span> <span class="hljs-string">dependent!</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-string">Compiling</span> <span class="hljs-number">1</span> <span class="hljs-string">source</span> <span class="hljs-string">file</span> <span class="hljs-string">to</span> <span class="hljs-string">/home/nebut/ENSEIGNEMENT/2021-2022/AGL/CoursMaven/mvnCL/mon-projet/target/classes</span></span><span class="line"><span class="hljs-string">[INFO]</span> </span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-meta">---</span> <span class="hljs-attr">maven-resources-plugin:2.6:testResources</span> <span class="hljs-string">(default-testResources)</span> <span class="hljs-string">@</span> <span class="hljs-string">mon-projet</span> <span class="hljs-meta">---</span></span><span class="line"><span class="hljs-string">[WARNING]</span> <span class="hljs-string">Using</span> <span class="hljs-string">platform</span> <span class="hljs-string">encoding</span> <span class="hljs-string">(UTF-8</span> <span class="hljs-string">actually)</span> <span class="hljs-string">to</span> <span class="hljs-string">copy</span> <span class="hljs-string">filtered</span> <span class="hljs-string">resources,</span> <span class="hljs-string">i.e.</span> <span class="hljs-string">build</span> <span class="hljs-string">is</span> <span class="hljs-string">platform</span> <span class="hljs-string">dependent!</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-string">skip</span> <span class="hljs-string">non</span> <span class="hljs-string">existing</span> <span class="hljs-string">resourceDirectory</span> <span class="hljs-string">/home/nebut/ENSEIGNEMENT/2021-2022/AGL/CoursMaven/mvnCL/mon-projet/src/test/resources</span></span><span class="line"><span class="hljs-string">[INFO]</span> </span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-meta">---</span> <span class="hljs-attr">maven-compiler-plugin:3.1:testCompile</span> <span class="hljs-string">(default-testCompile)</span> <span class="hljs-string">@</span> <span class="hljs-string">mon-projet</span> <span class="hljs-meta">---</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-string">Changes</span> <span class="hljs-string">detected</span> <span class="hljs-bullet">-</span> <span class="hljs-string">recompiling</span> <span class="hljs-string">the</span> <span class="hljs-string">module!</span></span><span class="line"><span class="hljs-string">[WARNING]</span> <span class="hljs-string">File</span> <span class="hljs-string">encoding</span> <span class="hljs-string">has</span> <span class="hljs-string">not</span> <span class="hljs-string">been</span> <span class="hljs-string">set,</span> <span class="hljs-string">using</span> <span class="hljs-string">platform</span> <span class="hljs-string">encoding</span> <span class="hljs-string">UTF-8,</span> <span class="hljs-string">i.e.</span> <span class="hljs-string">build</span> <span class="hljs-string">is</span> <span class="hljs-string">platform</span> <span class="hljs-string">dependent!</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-string">Compiling</span> <span class="hljs-number">1</span> <span class="hljs-string">source</span> <span class="hljs-string">file</span> <span class="hljs-string">to</span> <span class="hljs-string">/home/nebut/ENSEIGNEMENT/2021-2022/AGL/CoursMaven/mvnCL/mon-projet/target/test-classes</span></span><span class="line"><span class="hljs-string">[INFO]</span> </span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-meta">---</span> <span class="hljs-attr">maven-surefire-plugin:2.12.4:test</span> <span class="hljs-string">(default-test)</span> <span class="hljs-string">@</span> <span class="hljs-string">mon-projet</span> <span class="hljs-meta">---</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-string">Surefire</span> <span class="hljs-string">report</span> <span class="hljs-attr">directory:</span> <span class="hljs-string">/home/nebut/ENSEIGNEMENT/2021-2022/AGL/CoursMaven/mvnCL/mon-projet/target/surefire-reports</span></span><span class="line">&nbsp;</span><span class="line"><span class="hljs-bullet">-</span><span class="hljs-bullet">------------------------------------------------------</span></span><span class="line"> <span class="hljs-string">T</span> <span class="hljs-string">E</span> <span class="hljs-string">S</span> <span class="hljs-string">T</span> <span class="hljs-string">S</span></span><span class="line"><span class="hljs-bullet">-</span><span class="hljs-bullet">------------------------------------------------------</span></span><span class="line"><span class="hljs-string">Running</span> <span class="hljs-string">fr.umfds.agl.AppTest</span></span><span class="line"><span class="hljs-string">Tests</span> <span class="hljs-attr">run:</span> <span class="hljs-number">1</span><span class="hljs-string">,</span> <span class="hljs-attr">Failures:</span> <span class="hljs-number">0</span><span class="hljs-string">,</span> <span class="hljs-attr">Errors:</span> <span class="hljs-number">0</span><span class="hljs-string">,</span> <span class="hljs-attr">Skipped:</span> <span class="hljs-number">0</span><span class="hljs-string">,</span> <span class="hljs-string">Time</span> <span class="hljs-attr">elapsed:</span> <span class="hljs-number">0.008</span> <span class="hljs-string">sec</span></span><span class="line">&nbsp;</span><span class="line"><span class="hljs-string">Results</span> <span class="hljs-string">:</span></span><span class="line">&nbsp;</span><span class="line"><span class="hljs-string">Tests</span> <span class="hljs-attr">run:</span> <span class="hljs-number">1</span><span class="hljs-string">,</span> <span class="hljs-attr">Failures:</span> <span class="hljs-number">0</span><span class="hljs-string">,</span> <span class="hljs-attr">Errors:</span> <span class="hljs-number">0</span><span class="hljs-string">,</span> <span class="hljs-attr">Skipped:</span> <span class="hljs-number">0</span></span><span class="line">&nbsp;</span><span class="line"><span class="hljs-string">[INFO]</span> </span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-meta">---</span> <span class="hljs-attr">maven-jar-plugin:2.4:jar</span> <span class="hljs-string">(default-jar)</span> <span class="hljs-string">@</span> <span class="hljs-string">mon-projet</span> <span class="hljs-meta">---</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-string">Building</span> <span class="hljs-attr">jar:</span> <span class="hljs-string">/home/nebut/ENSEIGNEMENT/2021-2022/AGL/CoursMaven/mvnCL/mon-projet/target/mon-projet-1.0-SNAPSHOT.jar</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-bullet">------------------------------------------------------------------------</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-string">BUILD</span> <span class="hljs-string">SUCCESS</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-bullet">------------------------------------------------------------------------</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-string">Total</span> <span class="hljs-attr">time:</span>  <span class="hljs-number">2.372</span> <span class="hljs-string">s</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-string">Finished</span> <span class="hljs-attr">at:</span> <span class="hljs-number">2021</span><span class="hljs-bullet">-09</span><span class="hljs-bullet">-06</span><span class="hljs-attr">T14:22:31+02:00</span></span><span class="line"><span class="hljs-string">[INFO]</span> <span class="hljs-bullet">------------------------------------------------------------------------</span></span><span class="line">&nbsp;</span></code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-que-sest-il-passé-" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#que-sest-il-pass%C3%A9-" aria-hidden="true"></a>Que s’est-il passé ?</h2>
+<ul>
+<li>
+<p>Comme rien de spécifié, on construit un jar, donc on a les associations phase-goal vues précédemment</p>
+</li>
+<li>
+<p>Exécution de toutes les phases précédant package</p>
+</li>
+</ul>
+<ol>
+<li>process-resources (resources:resources) : copie les resources du code source vers le répertoire de sortie (target)
+→ ici pas de ressources (skip)</li>
+<li>compile (compiler:compile) : compilation du source, dans le répertoire cible (target)</li>
+<li>test-compile (compiler:testCompile) : compilation des tests</li>
+<li>test (surefire:test) : exécution des tests → Tests run: 1, Failures: 0, Errors: 0, Skipped: 0</li>
+<li>package (jar:jar) : création de mon-projet-1.0-SNAPSHOT.jar</li>
+</ol>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-que-sest-il-passé--1" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#que-sest-il-pass%C3%A9--1" aria-hidden="true"></a>Que s’est-il passé ?</h2>
+<pre><code class="language-txt"><span class="line">├── pom.xml</span><span class="line">├── src</span><span class="line">│&nbsp;&nbsp; ├── main</span><span class="line">│&nbsp;&nbsp; │&nbsp;&nbsp; └── java</span><span class="line">│&nbsp;&nbsp; │&nbsp;&nbsp;     └── fr</span><span class="line">│&nbsp;&nbsp; │&nbsp;&nbsp;         └── umfds</span><span class="line">│&nbsp;&nbsp; │&nbsp;&nbsp;             └── agl</span><span class="line">│&nbsp;&nbsp; │&nbsp;&nbsp;                 └── App.java</span><span class="line">│&nbsp;&nbsp; └── test</span><span class="line">│&nbsp;&nbsp;     └── java</span><span class="line">│&nbsp;&nbsp;         └── fr</span><span class="line">│&nbsp;&nbsp;             └── umfds</span><span class="line">│&nbsp;&nbsp;                 └── agl</span><span class="line">│&nbsp;&nbsp;                     └── AppTest.java</span><span class="line">└── target</span><span class="line">    ├── classes</span><span class="line">    │&nbsp;&nbsp; └── fr</span><span class="line">    │&nbsp;&nbsp;     └── umfds</span><span class="line">    │&nbsp;&nbsp;         └── agl</span><span class="line">    │&nbsp;&nbsp;             └── App.class</span><span class="line">    ├── maven-archiver</span><span class="line">    │&nbsp;&nbsp; └── pom.properties</span><span class="line">    ├── maven-status</span><span class="line">    │&nbsp;&nbsp; └── maven-compiler-plugin</span><span class="line">    │&nbsp;&nbsp;     ├── compile</span><span class="line">    │&nbsp;&nbsp;     │&nbsp;&nbsp; └── default-compile</span><span class="line">    │&nbsp;&nbsp;     │&nbsp;&nbsp;     ├── createdFiles.lst</span><span class="line">    │&nbsp;&nbsp;     │&nbsp;&nbsp;     └── inputFiles.lst</span><span class="line">    │&nbsp;&nbsp;     └── testCompile</span><span class="line">    │&nbsp;&nbsp;         └── default-testCompile</span><span class="line">    │&nbsp;&nbsp;             ├── createdFiles.lst</span><span class="line">    │&nbsp;&nbsp;             └── inputFiles.lst</span><span class="line">    ├── mon-projet-1.0-SNAPSHOT.jar</span><span class="line">    ├── surefire-reports</span><span class="line">    │&nbsp;&nbsp; ├── fr.umfds.agl.AppTest.txt</span><span class="line">    │&nbsp;&nbsp; └── TEST-fr.umfds.agl.AppTest.xml</span><span class="line">    └── test-classes</span><span class="line">        └── fr</span><span class="line">            └── umfds</span><span class="line">                └── agl</span><span class="line">                    └── AppTest.class</span></code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-pourquoi-des-warnings-" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#pourquoi-des-warnings-" aria-hidden="true"></a>Pourquoi des warnings ?</h2>
+<pre><code class="hljs oxygene"><span class="line">[WARNING] File encoding <span class="hljs-keyword">has</span> <span class="hljs-keyword">not</span> been <span class="hljs-keyword">set</span>, <span class="hljs-keyword">using</span> <span class="hljs-keyword">platform</span> encoding UTF-<span class="hljs-number">8</span>, i.e. build <span class="hljs-keyword">is</span> <span class="hljs-keyword">platform</span> dependent!</span><span class="line">[WARNING] <span class="hljs-keyword">Using</span> <span class="hljs-keyword">platform</span> encoding (UTF-<span class="hljs-number">8</span> actually) <span class="hljs-keyword">to</span> <span class="hljs-keyword">copy</span> filtered resources, i.e. build <span class="hljs-keyword">is</span> <span class="hljs-keyword">platform</span> dependent!</span></code></pre>
+<ul>
+<li>Quand on ne spécifie pas d’encodage, celui qui est utilisé est celui de la plateforme actuelle (ici UTF-8)</li>
+<li>Donc le build est dépendant de la plateforme</li>
+<li>pourquoi c’est mal ?
+<ul>
+<li>Reproductibilité !</li>
+</ul>
+</li>
+<li>Corrigeons …</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-réglage-de-la-propriété-dencodage" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#r%C3%A9glage-de-la-propri%C3%A9t%C3%A9-dencodage" aria-hidden="true"></a>Réglage de la propriété d’encodage</h2>
+<pre><code class="language-xml hljs"><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">project</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0"</span> <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><span class="line"><span class="hljs-tag">  <span class="hljs-attr">xsi:schemaLocation</span>=<span class="hljs-string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">modelVersion</span>&gt;</span>4.0.0<span class="hljs-tag">&lt;/<span class="hljs-name">modelVersion</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>fr.umfds.agl<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>mon-projet<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">packaging</span>&gt;</span>jar<span class="hljs-tag">&lt;/<span class="hljs-name">packaging</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.0-SNAPSHOT<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>mon-projet<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">url</span>&gt;</span>http://maven.apache.org<span class="hljs-tag">&lt;/<span class="hljs-name">url</span>&gt;</span></span><span class="line">  </span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">properties</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="hljs-tag">&lt;/<span class="hljs-name">project.build.sourceEncoding</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">properties</span>&gt;</span></span><span class="line">  </span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span></span><span class="line">      <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><span class="line">      <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>junit<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><span class="line">      <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>3.8.1<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><span class="line">      <span class="hljs-tag">&lt;<span class="hljs-name">scope</span>&gt;</span>test<span class="hljs-tag">&lt;/<span class="hljs-name">scope</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span></span><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">project</span>&gt;</span></span></code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-install" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#install" aria-hidden="true"></a>install</h2>
+<pre><code class="language-bash hljs"><span class="line">mvn install</span></code></pre>
+<p>Installation (par défaut dans le répertoire local) :
+* répertoire .m2 du homedir.
+* essentiellement : jar+POM</p>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h1><a id="user-content-maven-et-la-gestion-des-dépendances" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#maven-et-la-gestion-des-d%C3%A9pendances" aria-hidden="true"></a>Maven et la gestion des dépendances</h1>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-gestion-des-dépendances" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#gestion-des-d%C3%A9pendances" aria-hidden="true"></a>Gestion des dépendances</h2>
+<ul>
+<li>Caractéristique majeure de Maven</li>
+<li>Un projet déclare ses dépendances, et Maven les “gère” :
+<ul>
+<li>Téléchargement des dépendances manquantes</li>
+<li>Téléchargement des dépendances transitives (les dépendances des dépendances …)</li>
+<li>Analyse des dépendances : lesquelles manquent lesquelles sont (peut-être) en trop</li>
+<li>etc …</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-déclaration-simple-dune-dépendance" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#d%C3%A9claration-simple-dune-d%C3%A9pendance" aria-hidden="true"></a>Déclaration simple d’une dépendance</h2>
+<pre><code class="language-xml hljs"><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">project</span>&gt;</span>  </span><span class="line"> ... </span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span></span><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.mockito<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>mockito-all<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.10.19<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span></span><span class="line">  ...</span><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">project</span>&gt;</span></span></code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-déclaration-simple-dune-dépendance-en-mieux-avec-une-propriété" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#d%C3%A9claration-simple-dune-d%C3%A9pendance-en-mieux-avec-une-propri%C3%A9t%C3%A9" aria-hidden="true"></a>Déclaration simple d’une dépendance (en mieux avec une propriété)</h2>
+<pre><code class="language-xml hljs"><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">project</span>&gt;</span></span><span class="line">  ...</span><span class="line">  </span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">properties</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">mockito.version</span>&gt;</span>1.10.19<span class="hljs-tag">&lt;/<span class="hljs-name">mockito.version</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">properties</span>&gt;</span></span><span class="line"> ... </span><span class="line">  <span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span></span><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.mockito<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>mockito-all<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>${mockito.version}<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span></span><span class="line">  <span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span></span><span class="line">  ...</span><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">project</span>&gt;</span></span></code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-téléchargement-de-dépendance" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#t%C3%A9l%C3%A9chargement-de-d%C3%A9pendance" aria-hidden="true"></a>Téléchargement de dépendance</h2>
+<pre><code class="language-bash hljs"><span class="line">nebut@bigarade:~/.../mon-projet$ mvn package</span><span class="line">[INFO] Scanning <span class="hljs-keyword">for</span> projects...</span><span class="line">[INFO] </span><span class="line">[INFO] ----------------------&lt; fr.umfds.agl:mon-projet &gt;-----------------------</span><span class="line">[INFO] Building mon-projet 1.0-SNAPSHOT</span><span class="line">[INFO] --------------------------------[ jar ]---------------------------------</span><span class="line">Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.pom</span><span class="line">Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.pom (930 B at 1.4 kB/s)</span><span class="line">Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar</span><span class="line">Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar (1.2 MB at 2.2 MB/s)</span><span class="line">&nbsp;</span></code></pre>
+<ul>
+<li>installation dans le répertoire local (si pas déjà existant)</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-dépendances-transitives" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#d%C3%A9pendances-transitives" aria-hidden="true"></a>Dépendances transitives</h2>
+<pre><code class="language-xml hljs"><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">dependencies</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span></span><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.mockito<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>mockito-core<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><span class="line">        <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>3.4.6<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><span class="line">    <span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span></span><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">dependencies</span>&gt;</span></span></code></pre>
+<pre><code class="language-bash hljs"><span class="line">Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/3.4.6/mockito-core-3.4.6.pom</span><span class="line">Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/3.4.6/mockito-core-3.4.6.pom (25 kB at 48 kB/s)</span><span class="line">Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.10.13/byte-buddy-1.10.13.pom</span><span class="line">Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.10.13/byte-buddy-1.10.13.pom (11 kB at 185 kB/s)</span><span class="line">Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.10.13/byte-buddy-parent-1.10.13.pom</span><span class="line">Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.10.13/byte-buddy-parent-1.10.13.pom (41 kB at 583 kB/s)</span><span class="line">Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.10.13/byte-buddy-agent-1.10.13.pom</span><span class="line">Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.10.13/byte-buddy-agent-1.10.13.pom (9.6 kB at 162 kB/s)</span><span class="line">Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.pom</span><span class="line">Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.pom (2.8 kB at 54 kB/s)</span><span class="line">Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/2.6/objenesis-parent-2.6.pom</span><span class="line">Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis-parent/2.6/objenesis-parent-2.6.pom (17 kB at 295 kB/s)</span><span class="line">Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/3.4.6/mockito-core-3.4.6.jar</span><span class="line">Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.10.13/byte-buddy-agent-1.10.13.jar</span><span class="line">Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.10.13/byte-buddy-1.10.13.jar</span><span class="line">Downloading from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.jar</span><span class="line">Downloaded from central: https://repo.maven.apache.org/maven2/org/objenesis/objenesis/2.6/objenesis-2.6.jar (56 kB at 169 kB/s)</span><span class="line">Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-core/3.4.6/mockito-core-3.4.6.jar (636 kB at 1.3 MB/s)</span><span class="line">Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.10.13/byte-buddy-agent-1.10.13.jar (259 kB at 456 kB/s)</span><span class="line">Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.10.13/byte-buddy-1.10.13.jar (3.5 MB at 1.6 MB/s)</span><span class="line">&nbsp;</span></code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-dependency-tree" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#dependency-tree" aria-hidden="true"></a>Dependency tree</h2>
+<pre><code class="language-bash hljs"><span class="line">mvn dependency:tree</span><span class="line">[INFO] Scanning <span class="hljs-keyword">for</span> projects...</span><span class="line">[INFO] </span><span class="line">[INFO] ----------------------&lt; fr.umfds.agl:mon-projet &gt;-----------------------</span><span class="line">[INFO] Building mon-projet 1.0-SNAPSHOT</span><span class="line">[INFO] --------------------------------[ jar ]---------------------------------</span><span class="line">[INFO] </span><span class="line">[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ mon-projet ---</span><span class="line">[INFO] fr.umfds.agl:mon-projet:jar:1.0-SNAPSHOT</span><span class="line">[INFO] +- junit:junit:jar:3.8.1:<span class="hljs-built_in">test</span></span><span class="line">[INFO] \- org.mockito:mockito-core:jar:3.4.6:compile</span><span class="line">[INFO]    +- net.bytebuddy:byte-buddy:jar:1.10.13:compile</span><span class="line">[INFO]    +- net.bytebuddy:byte-buddy-agent:jar:1.10.13:compile</span><span class="line">[INFO]    \- org.objenesis:objenesis:jar:2.6:compile</span><span class="line">[INFO] ------------------------------------------------------------------------</span><span class="line">[INFO] BUILD SUCCESS</span><span class="line">[INFO] ------------------------------------------------------------------------</span><span class="line">[INFO] Total time:  1.200 s</span><span class="line">[INFO] Finished at: 2021-09-04T16:15:38+01:00</span><span class="line">[INFO] ------------------------------------------------------------------------</span></code></pre>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-dépendances-transitives--dependency-mediation" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#d%C3%A9pendances-transitives--dependency-mediation" aria-hidden="true"></a>Dépendances transitives : dependency mediation</h2>
+<ul>
+<li>Quelle version choisir quand plusieurs versions du même artéfact sont trouvées comme dépendances ?
+<ul>
+<li>Maven choisit la définition “la moins profonde” dans l’arbre (appelée “nearest definition”).</li>
+<li>exemple :</li>
+</ul>
+<pre><code class="hljs mathematica"><span class="line">  A</span><span class="line">  ├── B</span><span class="line">  │   └── <span class="hljs-keyword">C</span></span><span class="line">  │       └── <span class="hljs-keyword">D</span> <span class="hljs-number">2.0</span></span><span class="line">  └── <span class="hljs-keyword">E</span></span><span class="line">      └── <span class="hljs-keyword">D</span> <span class="hljs-number">1.0</span></span></code></pre>
+D 1.0 est moins profond que D 2.0 donc choix de D 1.0</li>
+<li>On peut “forcer” la version à choisir notamment avec &lt;dependencyManagement&gt;</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-dependency-scope" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#dependency-scope" aria-hidden="true"></a>Dependency scope</h2>
+<ul>
+<li>Pour chaque dépendance déclarée, on peut déclarer sa portée (son scope)</li>
+<li>6 scopes :
+<ul>
+<li>compile (par défaut). Les dépendances de cette portée sont disponibles dans tous les classpaths du projet, et sont propagées aux projets dépendants</li>
+<li>provided. Les dépendances de cette portée sont ajoutées au classpath utilisés pour la compilation et le test, mais pas l’exécution (sont supposées fournies par l’environnement d’exécution). Ne sont pas propagées.</li>
+<li>runtime. Dépendance uniquement requise à l’exécution, donc dans le classpath rutime et test mais pas compile.</li>
+<li>test. Dépendance requise uniquement pour le test (compilation et exécution du test). Exemple : mockito et junit.</li>
+<li>system. Comme provided mais le jar est fourni (et ne sera pas cherché dans le repository).</li>
+<li>import. A placer seulement dans une dépendance dans la section &lt;dependencyManagement&gt;, avec un type POM. Indique que cette dépendance doit être remplacée par toutes les dépendances effectives trouvées dans le POM.</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-analyse-des-dépendances" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#analyse-des-d%C3%A9pendances" aria-hidden="true"></a>Analyse des dépendances</h2>
+<pre><code class="hljs less"><span class="line"><span class="hljs-selector-tag">mvn</span> <span class="hljs-selector-tag">dependency</span><span class="hljs-selector-pseudo">:analyze</span></span></code></pre>
+<ul>
+<li>Classification des dépendances en :
+<ul>
+<li>used and declared</li>
+<li>used and undeclared : dépendances transitives. Il est mieux de les ajouter explicitement en dépendances pour mieux en contrôler les versions</li>
+<li>unused and declared : dépendances qui ne sont pas utilisées après une analyse du code compilé. Mais peuvent être utilisées quand même à l’exécution. A manier avec précaution.</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-mais-où-maven-va-t-il-chercher-ses-dépendances-" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#mais-o%C3%B9-maven-va-t-il-chercher-ses-d%C3%A9pendances-" aria-hidden="true"></a>Mais où Maven va t-il chercher ses dépendances ?</h2>
+<ul>
+<li>en local (répertoire .m2)</li>
+<li>dans le dépôt Maven “officiel”</li>
+<li>dans les repositories spécifiés dans le pom</li>
+<li>possibilité de connecter un gestionnaire de dépôt (depository manager) comme Nexus.</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-le-dépôt-maven" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#le-d%C3%A9p%C3%B4t-maven" aria-hidden="true"></a>Le dépôt Maven</h2>
+<p><img src="./AGL1title_files/ef5169e8ad14e18dda46b95d019149a0-growth.png" alt="nb projets du dépôt Maven"></p>
+<p><a href="https://mvnrepository.com/repos">https://mvnrepository.com/repos</a></p>
+
+            </section>
+    
+
+
+
+    
+    <section hidden="" aria-hidden="true" class="stack future" style="display: none;">
+        <section style="display: none;">
+            <h1><a id="user-content-organisation-type-du-projet-en-répertoires" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#organisation-type-du-projet-en-r%C3%A9pertoires" aria-hidden="true"></a>Organisation type du projet en répertoires</h1>
+
+            </section>
+        
+            <section class="future" aria-hidden="true" style="display: none;">
+                <h2><a id="user-content-organisation-type-du-projet-en-répertoires-1" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#organisation-type-du-projet-en-r%C3%A9pertoires-1" aria-hidden="true"></a>Organisation type du projet en répertoires</h2>
+<ul>
+<li>Comme vu dans notre premier projet Maven, une structure type de projet est mise en place si on utilise archetype.</li>
+<li>Il est recommandé de suivre cette structure type</li>
+<li>Il est néanmoins possible de paramétrer le projet pour suivre une autre structure.</li>
+<li>Avantages d’une structure-type
+<ul>
+<li>organisation proposée issue de bonnes pratiques</li>
+<li>prise en main d’un nouveau projet facilitée</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+        
+
+    </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-organisation-type-proposée" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#organisation-type-propos%C3%A9e" aria-hidden="true"></a>Organisation type proposée</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Chemin</th>
+<th style="text-align:center">description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">src/main/java</td>
+<td style="text-align:center">Application/Library sources</td>
+</tr>
+<tr>
+<td style="text-align:center">src/main/resources</td>
+<td style="text-align:center">Application/Library resources</td>
+</tr>
+<tr>
+<td style="text-align:center">src/main/filters</td>
+<td style="text-align:center">Resource filter files</td>
+</tr>
+<tr>
+<td style="text-align:center">src/main/webapp</td>
+<td style="text-align:center">Web application sources</td>
+</tr>
+<tr>
+<td style="text-align:center">src/test/java</td>
+<td style="text-align:center">Test sources</td>
+</tr>
+<tr>
+<td style="text-align:center">src/test/resources</td>
+<td style="text-align:center">Test resources</td>
+</tr>
+<tr>
+<td style="text-align:center">src/test/filters</td>
+<td style="text-align:center">Test resource filter files</td>
+</tr>
+<tr>
+<td style="text-align:center">src/it</td>
+<td style="text-align:center">Integration Tests (primarily for plugins)</td>
+</tr>
+<tr>
+<td style="text-align:center">src/assembly</td>
+<td style="text-align:center">Assembly descriptors</td>
+</tr>
+<tr>
+<td style="text-align:center">src/site</td>
+<td style="text-align:center">Site</td>
+</tr>
+<tr>
+<td style="text-align:center">LICENSE.txt</td>
+<td style="text-align:center">Project’s license</td>
+</tr>
+<tr>
+<td style="text-align:center">NOTICE.txt</td>
+<td style="text-align:center">Notices and attributions required by libraries that the project depends on</td>
+</tr>
+<tr>
+<td style="text-align:center">README.txt</td>
+<td style="text-align:center">Project’s readme</td>
+</tr>
+</tbody>
+</table>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-organisation-type" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#organisation-type" aria-hidden="true"></a>Organisation type</h2>
+<ul>
+<li>Il est possible de déroger à cette organisation type</li>
+<li>Mais la garder est intéressante :
+<ul>
+<li>“usage” commun : entrer dans le projet est simplifié</li>
+<li>organisation issue de bonnes pratiques</li>
+</ul>
+</li>
+<li>D’autres répertoires (indépemment de la hiérarchie de packages) peuvent être nécessaires
+<ul>
+<li>dans ce cas placer des sous-répertoires dans la hiérarchie</li>
+<li>exemple : fichiers de grammaires dans un répertoire /src/main/antlr</li>
+<li>autre exemple : src/main/webapp/css, src/main/webapp/images, src/main/webapp/jsp</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h1><a id="user-content-quelques-éléments-supplémentaires" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#quelques-%C3%A9l%C3%A9ments-suppl%C3%A9mentaires" aria-hidden="true"></a>Quelques éléments supplémentaires</h1>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-plugins" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#plugins" aria-hidden="true"></a>Plugins</h2>
+<ul>
+<li>Utiliser Maven c’est beaucoup configurer des plugins</li>
+<li>2 sortes de plugins :
+<ul>
+<li>build : ceux qui sont exécutés durant le build (configurés dans la section build du pom)
+<ul>
+<li>exemple : failsafe (pour les tests d’intégration)</li>
+</ul>
+</li>
+<li>reporting : ceux qui sont utilisés durant la génération du site (configurés dans la section reporting du pom)
+<ul>
+<li>exemple : plugin javadoc</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-pom-super-pom" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#pom-super-pom" aria-hidden="true"></a>POM, super-POM</h2>
+<ul>
+<li>Tout pom peut hériter d’un autre POM<pre><code class="language-xml hljs"><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">parent</span>&gt;</span></span><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>groupe<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span></span><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>projet<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span></span><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>version<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span></span><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">parent</span>&gt;</span></span></code></pre>
+</li>
+<li>Héritage des propriétés du POM hérité, mais redéfinition possible</li>
+<li>Héritage “transitif”</li>
+<li>Par défaut, tout POM hérite du super-POM (POM par défaut)</li>
+<li>Souvent utilisé pour les multi-projets</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-pom-simplest-pom-effective-pom" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#pom-simplest-pom-effective-pom" aria-hidden="true"></a>POM, simplest POM, effective POM</h2>
+<ul>
+<li>simplest POM : celui qui est réellement défini dans le projet</li>
+<li>maven peut construire le pom effectif (effective pom)
+<ul>
+<li>mvn help:effective-pom</li>
+<li>combine le pom hérité, le super-pom et le simplest pom</li>
+</ul>
+</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-bonnes-pratiques-maven" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#bonnes-pratiques-maven" aria-hidden="true"></a>Bonnes pratiques Maven</h2>
+<ul>
+<li>nommer votre projet !</li>
+<li>fixer la version des plugins.</li>
+<li>placer en attribut les numéros de versions des artéfacts utilisés plutôt qu’en dur dans les dépendances.</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h1><a id="user-content-conclusion" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#conclusion" aria-hidden="true"></a>Conclusion</h1>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-maven-avantages" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#maven-avantages" aria-hidden="true"></a>Maven, avantages</h2>
+<ul>
+<li>prise en main d’un projet facilitée
+<ul>
+<li>structure type</li>
+</ul>
+</li>
+<li>compilation facilitée
+<ul>
+<li>gestion des dépendances</li>
+<li>centralisation des informations dans le POM</li>
+<li>incluant la génération de rapports</li>
+</ul>
+</li>
+<li>bonnes pratiques respectées
+<ul>
+<li>eg test</li>
+</ul>
+</li>
+<li>Pas de DSL à apprendre</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-maven-les-plugins" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#maven-les-plugins" aria-hidden="true"></a>Maven, les plugins</h2>
+<ul>
+<li>Il en existe beaucoup</li>
+<li>Leur usage est à intégrer au POM</li>
+<li>La création de plugins est possible</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-maven-les-lourdeurs" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#maven-les-lourdeurs" aria-hidden="true"></a>Maven, les lourdeurs</h2>
+<ul>
+<li>XML …</li>
+<li>configuration en XML lourde vs DSL</li>
+<li>compilation longuette</li>
+</ul>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            <h2><a id="user-content-maven-ou-gradle--au-centre-du-développement" class="anchor" href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#maven-ou-gradle--au-centre-du-d%C3%A9veloppement" aria-hidden="true"></a>Maven (ou gradle) : au centre du développement</h2>
+<p><img src="./AGL1title_files/devops.png" alt="devops"></p>
+
+            </section>
+    
+
+
+
+    
+        <section hidden="" aria-hidden="true" class="future" style="display: none;">
+            
+            
+            </section>
+    
+
+
+    </div>
+
+
+  <div class="chalkboard-button" id="toggle-chalkboard" style="visibility: visible; position: absolute; z-index: 30; font-size: 24px; inset: auto auto 30px 60px;"><a href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#" onclick="RevealChalkboard.toggleChalkboard(); return false;"><i class="fa fa-pencil-square-o"></i></a></div><div class="chalkboard-button" id="toggle-notes" style="position: absolute; z-index: 30; font-size: 24px; inset: auto auto 30px 90px;"><a href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#" onclick="RevealChalkboard.toggleNotesCanvas(); return false;"><i class="fa fa-pencil"></i></a></div><div id="notescanvas" class="overlay visible" data-prevent-swipe="" style="cursor: url(&quot;https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/libs/reveal.js/3.8.0/plugin/chalkboard/img/boardmarker.png&quot;), auto; background: rgba(0, 0, 0, 0); z-index: 24; pointer-events: none;"><img src="./AGL1title_files/sponge.png" id="sponge" style="visibility: hidden; position: absolute;"><canvas width="628" height="411" data-chalkboard="0" style="cursor: url(&quot;https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/libs/reveal.js/3.8.0/plugin/chalkboard/img/boardmarker.png&quot;), auto;"></canvas></div><div id="chalkboard" class="overlay" data-prevent-swipe="" style="cursor: url(&quot;https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/libs/reveal.js/3.8.0/plugin/chalkboard/img/chalk.png&quot;), auto; background: url(&quot;https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/libs/reveal.js/3.8.0/plugin/chalkboard/img/blackboard.png&quot;) repeat; z-index: 26;"><img src="./AGL1title_files/sponge.png" id="sponge" style="visibility: hidden; position: absolute;"><canvas width="628" height="411" data-chalkboard="1" style="cursor: url(&quot;https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/libs/reveal.js/3.8.0/plugin/chalkboard/img/chalk.png&quot;), auto;"></canvas></div><div class="backgrounds"><div class="slide-background present" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background future" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background future" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background stack future" style="display: none;"><div class="slide-background-content"></div><div class="slide-background present" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" data-controls-layout="bottom-right" data-controls-back-arrows="faded" style="display: block;"><button class="navigate-left" aria-label="previous slide" disabled="disabled"><div class="controls-arrow"></div></button><button class="navigate-right enabled highlight" aria-label="next slide"><div class="controls-arrow"></div></button><button class="navigate-up" aria-label="above slide" disabled="disabled"><div class="controls-arrow"></div></button><button class="navigate-down" aria-label="below slide" disabled="disabled"><div class="controls-arrow"></div></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"><button class="resume-button">Resume presentation</button></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">
+            
+            
+Maven
+AGL
+2021-2022
+
+            </div><nav class="slide-menu slide-menu--left"><ol class="slide-menu-toolbar"><li data-button="0" class="toolbar-panel-button active-toolbar-button" data-panel="Slides"><span class="slide-menu-toolbar-label">Slides</span><br><i class="fa fa-list"></i></li><li id="close"><span class="slide-menu-toolbar-label">Close</span><br><i class="fa fa-times"></i></li></ol><div data-panel="Slides" class="slide-menu-panel active-menu-panel"><ul class="slide-menu-items"><li class="slide-menu-item active" data-item="0" data-slide-h="0" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Maven</span></li><li class="slide-menu-item future" data-item="1" data-slide-h="1" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Introduction</span></li><li class="slide-menu-item future" data-item="2" data-slide-h="2" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Origines, motivation</span></li><li class="slide-menu-item future" data-item="3" data-slide-h="3" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Origines</span></li><li class="slide-menu-item future" data-item="4" data-slide-h="4" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Objectifs</span></li><li class="slide-menu-item future" data-item="5" data-slide-h="5" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Pourquoi utiliser Maven ? Gestion des dépendances</span></li><li class="slide-menu-item future" data-item="6" data-slide-h="6" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Pourquoi utiliser Maven ?  Cycle de vie</span></li><li class="slide-menu-item future" data-item="7" data-slide-h="7" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Pom pom pom …</span></li><li class="slide-menu-item future" data-item="8" data-slide-h="8" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Intégration de Maven dans les IDE</span></li><li class="slide-menu-item future" data-item="9" data-slide-h="9" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Maven et les autres</span></li><li class="slide-menu-item future" data-item="10" data-slide-h="10" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Cycle de vie du build, phases, plugins, goals</span></li><li class="slide-menu-item future" data-item="11" data-slide-h="11" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Cycle de vie du build (build lifecycle)</span></li><li class="slide-menu-item future" data-item="12" data-slide-h="12" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Phases</span></li><li class="slide-menu-item future" data-item="13" data-slide-h="13" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Plugins et goals</span></li><li class="slide-menu-item future" data-item="14" data-slide-h="14" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Vue d’ensemble</span></li><li class="slide-menu-item future" data-item="15" data-slide-h="15" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Associations entre phases et goals</span></li><li class="slide-menu-item future" data-item="16" data-slide-h="16" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Associations entre phases et goals</span></li><li class="slide-menu-item future" data-item="17" data-slide-h="17" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Associations entre phases et goals</span></li><li class="slide-menu-item future" data-item="18" data-slide-h="18" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Premier projet Maven</span></li><li class="slide-menu-item future" data-item="19" data-slide-h="19" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Création d’un projet via le plugin archetype</span></li><li class="slide-menu-item future" data-item="20" data-slide-h="20" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Hiérarchie de fichiers obtenue</span></li><li class="slide-menu-item future" data-item="21" data-slide-h="21" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Premier POM</span></li><li class="slide-menu-item future" data-item="22" data-slide-h="22" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">POM : carte d’identité minimale du projet</span></li><li class="slide-menu-item future" data-item="23" data-slide-h="23" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">POM : première rencontre avec les dependencies</span></li><li class="slide-menu-item future" data-item="24" data-slide-h="24" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">POM : première rencontre avec la gestion des dépendances</span></li><li class="slide-menu-item future" data-item="25" data-slide-h="25" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Premier build, mvn package</span></li><li class="slide-menu-item future" data-item="26" data-slide-h="26" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Premier build, sortie</span></li><li class="slide-menu-item future" data-item="27" data-slide-h="27" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Que s’est-il passé ?</span></li><li class="slide-menu-item future" data-item="28" data-slide-h="28" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Que s’est-il passé ?</span></li><li class="slide-menu-item future" data-item="29" data-slide-h="29" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Pourquoi des warnings ?</span></li><li class="slide-menu-item future" data-item="30" data-slide-h="30" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Réglage de la propriété d’encodage</span></li><li class="slide-menu-item future" data-item="31" data-slide-h="31" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">install</span></li><li class="slide-menu-item future" data-item="32" data-slide-h="32" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Maven et la gestion des dépendances</span></li><li class="slide-menu-item future" data-item="33" data-slide-h="33" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Gestion des dépendances</span></li><li class="slide-menu-item future" data-item="34" data-slide-h="34" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Déclaration simple d’une dépendance</span></li><li class="slide-menu-item future" data-item="35" data-slide-h="35" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Déclaration simple d’une dépendance (en mieux avec une propriété)</span></li><li class="slide-menu-item future" data-item="36" data-slide-h="36" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Téléchargement de dépendance</span></li><li class="slide-menu-item future" data-item="37" data-slide-h="37" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Dépendances transitives</span></li><li class="slide-menu-item future" data-item="38" data-slide-h="38" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Dependency tree</span></li><li class="slide-menu-item future" data-item="39" data-slide-h="39" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Dépendances transitives : dependency mediation</span></li><li class="slide-menu-item future" data-item="40" data-slide-h="40" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Dependency scope</span></li><li class="slide-menu-item future" data-item="41" data-slide-h="41" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Analyse des dépendances</span></li><li class="slide-menu-item future" data-item="42" data-slide-h="42" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Mais où Maven va t-il chercher ses dépendances ?</span></li><li class="slide-menu-item future" data-item="43" data-slide-h="43" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Le dépôt Maven</span></li><li class="slide-menu-item future" data-item="44" data-slide-h="44" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Organisation type du projet en répertoires</span></li><li class="slide-menu-item-vertical future" data-item="45" data-slide-h="44" data-slide-v="1"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Organisation type du projet en répertoires</span></li><li class="slide-menu-item future" data-item="46" data-slide-h="45" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Organisation type proposée</span></li><li class="slide-menu-item future" data-item="47" data-slide-h="46" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Organisation type</span></li><li class="slide-menu-item future" data-item="48" data-slide-h="47" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Quelques éléments supplémentaires</span></li><li class="slide-menu-item future" data-item="49" data-slide-h="48" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Plugins</span></li><li class="slide-menu-item future" data-item="50" data-slide-h="49" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">POM, super-POM</span></li><li class="slide-menu-item future" data-item="51" data-slide-h="50" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">POM, simplest POM, effective POM</span></li><li class="slide-menu-item future" data-item="52" data-slide-h="51" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Bonnes pratiques Maven</span></li><li class="slide-menu-item future" data-item="53" data-slide-h="52" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Conclusion</span></li><li class="slide-menu-item future" data-item="54" data-slide-h="53" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Maven, avantages</span></li><li class="slide-menu-item future" data-item="55" data-slide-h="54" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Maven, les plugins</span></li><li class="slide-menu-item future" data-item="56" data-slide-h="55" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Maven, les lourdeurs</span></li><li class="slide-menu-item future" data-item="57" data-slide-h="56" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Maven (ou gradle) : au centre du développement</span></li><li class="slide-menu-item no-title future" data-item="58" data-slide-h="57" data-slide-v="0"><i class="fa fa-check-circle past"></i><i class="fa fa-dot-circle-o active"></i><i class="fa fa-circle-thin future"></i><span class="slide-menu-item-title">Slide 58</span></li></ul></div></nav><div class="slide-menu-overlay"></div><div class="slide-menu-button"><a href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#"><i class="fa fa-bars"></i></a></div><div id="searchinputdiv" class="searchdiv" style="position: absolute; top: 10px; right: 10px; z-index: 10; display: none;"><span><input type="search" id="searchinput" class="searchinput" style="vertical-align: top;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAJiSURBVHjatFZNaxNBGH5md+Mmu92NVdKDRipSAyqCghgQD4L4cRe86UUtAQ+eFCxoa4/25EXBFi8eBE+eRPoDhB6KgiiixdAPCEkx2pjvTXadd9yNsflwuyUDD/O+u8PzzDPvzOwyx3EwyCZhwG3gAkp7MnpjgbopjsltcD4gjuXZZKeAR348MYLYTm3LzOs/y3j3JTfZxgXWXmTuwPHIc4VmoOmv5IrI53+AO2DdHLjkDWQ3GoEEVFXtXQOvkSnPWcyUceviLhwbDYv8/XIVj97kse7TodLvZXxYxrPUHkQ1ufXs3FEdybEIxucySOesoNvUgWU1cP3MkCBfTFdw9fGaAMVmRELq7LBw2Q3/FaAxxWIRpw+ZIr/7IouPqzUBiqmdHAv7EuhRAwf1er2Vy4x1jW3b2d5Jfvu5IPp7l2LYbcgCFFNb+FoJ7oBqEAqFMPNqFcmEgVMJDfMT+1tvN0pNjERlMS6QA5pFOKxiKVPFhakPeL3It+WGJUDxt2wFR+JhzI7v5ctkd8DXOZAkCYYxhO+lKm4+Xfqz/rIixBuNBl7eOYzkQQNzqX249mRl6zUgEcYkaJrGhUwBinVdh6IouPzwE6/DL5w4oLkH8y981aDf+uq6hlKpJESiUdNfDZi7/ehG9K6KfiA3pml0PLcsq+cSMTj2NL9ukc4UOmz7AZ3+crkC4mHujFvXNaMFB3bEr8xPS6p5O+jXxq4VZtaen7/PwzrntjcLUE0iHPS1Ud1cdiEJl/8WivZk0wXd7zWOMkeF8s0CcAmkNrC2nvXZDbbbN73ccYnZoH9bfgswAFzAe9/h3dbKAAAAAElFTkSuQmCC" id="searchbutton" class="searchicon" style="vertical-align: top; margin-top: -1px;"></span></div><footer id="title-footer" style="background:rgba(0,0,0,0.1)"><p><a href="https://moodle.umontpellier.fr/pluginfile.php/1502768/mod_resource/content/1/export/index.html#/0">Maven - AGL - 2021-2022</a></p></footer></div>
+
+  <script src="./AGL1title_files/head.min.js.téléchargement"></script>
+  <script src="./AGL1title_files/reveal.js.téléchargement"></script>
+
+  <script>
+
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+
+        controls: true,
+        controlsTutorial: true,
+        controlsLayout: 'bottom-right',
+        controlsBackArrows: 'faded',
+        progress: true,
+        slideNumber: false,
+        history: true,
+        keyboard: true,
+        overview: true,
+        center: false,
+        touch: true,
+        loop: false,
+        rtl: false,
+        shuffle: false,
+        fragments: true,
+        fragmentInURL: false,
+        embedded: false,
+        help: true,
+        showNotes: false,
+        autoPlayMedia: false,
+        autoSlide: 0,
+        autoSlideStoppable: true,
+        autoSlideMethod: Reveal.navigateNext,
+        defaultTiming: 120,
+        mouseWheel: false,
+        hideAddressBar: true,
+        previewLinks: false,
+        transition: 'false',
+        transitionSpeed: 'default',
+        backgroundTransition: 'default',
+        viewDistance: 3,
+        parallaxBackgroundImage: '',
+        parallaxBackgroundSize: '',
+        parallaxBackgroundHorizontal: 0,
+        parallaxBackgroundVertical: 0,
+        display: 'block',
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            // { src: 'libs/reveal.js/3.8.0/lib/js/classList.js', condition: function () { return !document.body.classList; } },
+            // { src: 'libs/reveal.js/3.8.0/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+            // { src: 'libs/reveal.js/3.8.0/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+            // { src: 'libs/reveal.js/3.8.0/plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+            { src: 'libs/reveal.js/3.8.0/plugin/notes/notes.js', async: true },
+            { src: 'libs/reveal.js/3.8.0/plugin/chart/Chart.min.js' },
+            { src: 'libs/reveal.js/3.8.0/plugin/chart/csv2chart.js' },
+            { src: 'libs/reveal.js/3.8.0/plugin/embed-tweet/embed-tweet.js' },
+            { src: 'libs/reveal.js/3.8.0/plugin/math/math.js', async: true },
+            { src: 'libs/highlight.js/9.12.0/highlight.js', async: true },
+            { src: 'libs/reveal.js/3.8.0/plugin/anything/anything.js' },
+            { src: 'libs/reveal.js/3.8.0/plugin/mermaid/mermaid.min.js', async: true, callback: function() {mermaid.initialize({startOnLoad:false})} },	
+
+           
+        { src: 'libs/reveal.js/3.8.0/plugin/search/search.js', async: true },
+           
+
+           
+        { src: 'libs/reveal.js/3.8.0/plugin/zoom-js/zoom.js', async: true },
+            
+
+            
+        { src: 'libs/reveal.js/3.8.0/plugin/chalkboard/chalkboard.js' },
+            
+
+            
+        { src: 'libs/reveal.js/3.8.0/plugin/menu/menu.js' },
+            
+
+            
+        { src: 'libs/reveal.js/3.8.0/plugin/title-footer/title-footer.js', async: true, callback: function () { title_footer.initialize(); } },
+            
+
+        {
+            src: 'libs/highlight.js/9.12.0/reveal-code-focus-1.0.0-mod.js',
+            async: true,
+            callback: function () {
+                RevealCodeFocus();
+            }
+        },
+            // { src: 'libs/reveal.js/3.8.0/plugin/reveal-code-focus/highlight.pack.js' },
+            // { src: 'libs/reveal.js/3.8.0/plugin/reveal-code-focus/reveal-code-focus.js', async: true, callback: function() { RevealCodeFocus(); } },
+           // {src: 'libs/reveal.js/3.8.0/plugin/line-numbers/line-numbers.js'}
+        ]
+        ,
+    keyboard: {
+        67: function () { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
+        66: function () { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
+        46: function () { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+        8: function () { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
+        68: function () { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
+    },
+    math: {
+       // mathjax: 'libs/reveal.js/3.8.0/plugin/math/MathJax.js',
+             mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+            config: 'TeX-AMS_HTML-full'
+    },
+    chart: {
+        defaults: {
+            global: {
+                title: { fontColor: "#FFF" },
+                legend: {
+                    position: "bottom",
+                        labels: { fontColor: "#FFF" },
+                },
+                tooltips: {
+                    labels: { fontColor: "#FFF" },
+                },
+            },
+            scale: {
+                scaleLabel: { fontColor: "#FFF" },
+                gridLines: { color: "#FFF", zeroLineColor: "#FFF" },
+                ticks: { fontColor: "#FFF" },
+            }
+        },
+        line: { borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"], "borderDash": [[5, 10], [0, 0]] },
+        bar: { backgroundColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"] },
+        pie: { backgroundColor: [["rgba(0,0,0,.8)", "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"]] },
+        radar: { borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"] },
+    },
+    anything: [ 
+	 {
+	  className: "mermaid"
+	 },
+	 // ...
+	],
+    menu: {
+        // Specifies which side of the presentation the menu will 
+        // be shown. Use 'left' or 'right'.
+        side: 'left',
+
+            // Specifies the width of the menu.
+            // Can be one of the following:
+            // 'normal', 'wide', 'third', 'half', 'full', or
+            // any valid css length value
+            width: 'normal',
+
+                // Add slide numbers to the titles in the slide list.
+                // Use 'true' or format string (same as reveal.js slide numbers)
+                numbers: false,
+
+                    // Specifies which slide elements will be used for generating
+                    // the slide titles in the menu. The default selects the first
+                    // heading element found in the slide, but you can specify any
+                    // valid css selector and the text from the first matching
+                    // element will be used.
+                    // Note: that a section data-menu-title attribute or an element
+                    // with a menu-title class will take precedence over this option
+                    titleSelector: 'h1, h2, h3, h4, h5, h6',
+
+                        // If slides do not have a matching title, attempt to use the
+                        // start of the text content as the title instead
+                        useTextContentForMissingTitles: false,
+
+                            // Hide slides from the menu that do not have a title.
+                            // Set to 'true' to only list slides with titles.
+                            hideMissingTitles: false,
+
+                                // Adds markers to the slide titles to indicate the 
+                                // progress through the presentation. Set to 'false'
+                                // to hide the markers.
+                                markers: true,
+
+                                    // Specify custom panels to be included in the menu, by
+                                    // providing an array of objects with 'title', 'icon'
+                                    // properties, and either a 'src' or 'content' property.
+                                    // custom: false,
+                                    custom: [],
+                                        // Specifies the themes that will be available in the themes
+                                        // menu panel. Set to 'true' to show the themes menu panel
+                                        // with the default themes list. Alternatively, provide an
+                                        // array to specify the themes to make available in the
+                                        // themes menu panel, for example...
+                                        // [
+                                        //     { name: 'Black', theme: 'css/theme/black.css' },
+                                        //     { name: 'White', theme: 'css/theme/white.css' },
+                                        //     { name: 'League', theme: 'css/theme/league.css' }
+                                        // ]
+                                        themes: false,
+
+                                            // Specifies the path to the default theme files. If your
+                                            // presentation uses a different path to the standard reveal
+                                            // layout then you need to provide this option, but only
+                                            // when 'themes' is set to 'true'. If you provide your own 
+                                            // list of themes or 'themes' is set to 'false' the 
+                                            // 'themesPath' option is ignored.
+                                            themesPath: 'css/theme/',
+
+                                                // Specifies if the transitions menu panel will be shown.
+                                                // Set to 'true' to show the transitions menu panel with
+                                                // the default transitions list. Alternatively, provide an
+                                                // array to specify the transitions to make available in
+                                                // the transitions panel, for example...
+                                                // ['None', 'Fade', 'Slide']
+                                                transitions: false,
+
+                                                    // Adds a menu button to the slides to open the menu panel.
+                                                    // Set to 'false' to hide the button.
+                                                    openButton: true,
+
+                                                        // If 'true' allows the slide number in the presentation to
+                                                        // open the menu panel. The reveal.js slideNumber option must 
+                                                        // be displayed for this to take effect
+                                                        openSlideNumber: false,
+
+                                                            // If true allows the user to open and navigate the menu using
+                                                            // the keyboard. Standard keyboard interaction with reveal
+                                                            // will be disabled while the menu is open.
+                                                            keyboard: true,
+
+                                                                // Normally the menu will close on user actions such as
+                                                                // selecting a menu item, or clicking the presentation area.
+                                                                // If 'true', the sticky option will leave the menu open
+                                                                // until it is explicitly closed, that is, using the close
+                                                                // button or pressing the ESC or m key (when the keyboard 
+                                                                // interaction option is enabled).
+                                                                sticky: false,
+
+                                                                    // If 'true' standard menu items will be automatically opened
+                                                                    // when navigating using the keyboard. Note: this only takes 
+                                                                    // effect when both the 'keyboard' and 'sticky' options are enabled.
+                                                                    autoOpen: true,
+
+                                                                        // If 'true' the menu will not be created until it is explicitly
+                                                                        // requested by calling RevealMenu.init(). Note this will delay
+                                                                        // the creation of all menu panels, including custom panels, and
+                                                                        // the menu button.
+                                                                        delayInit: false,
+
+                                                                            // If 'true' the menu will be shown when the menu is initialised.
+                                                                            openOnInit: false,
+
+                                                                                // By default the menu will load it's own font-awesome library
+                                                                                // icons. If your presentation needs to load a different
+                                                                                // font-awesome library the 'loadIcons' option can be set to false
+                                                                                // and the menu will not attempt to load the font-awesome library.
+                                                                                loadIcons: false
+    },
+    chalkboard: {
+        toggleChalkboardButton: { left: "60px", bottom: "30px", top: "auto", right: "auto" },
+        toggleNotesButton: { left: "90px", bottom: "30px", top: "auto", right: "auto" },
+
+    }
+    });
+
+
+
+</script>
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./AGL1title_files/widget_iframe.a53eecb4584348a2ad32ec2ae21f6eae.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="wanteeedPanel" data-version="1.16.1" allowtransparency="true" style="
+      width: 335px !important;
+      height: 280px !important;
+      min-width: 0;
+      min-height: 0;
+      display: none;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      left: auto;
+      border: none;
+      background-color: #ffffff;
+      overflow: hidden;
+      z-index: 9145739864;
+      clip: auto;
+      border-radius: 3px;
+      box-shadow: rgb(181, 181, 181) 1px 1px 3px 2px;
+    " src="./AGL1title_files/saved_resource.html"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./AGL1title_files/saved_resource(1).html"></iframe><div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: MathJax_Size1, monospace;"></div></div><iframe id="wanteeedTestMaker" data-version="1.16.1" allowtransparency="true" style="
+      width: 350px;
+      height: 0;
+      transition: .2s ease-out;
+      position: fixed;
+      top: 10px;
+      left: 0;
+      overflow: hidden;
+      z-index: 45739864;
+      clip: auto;
+      border: none;
+    " src="./AGL1title_files/saved_resource(2).html"></iframe></body></html>

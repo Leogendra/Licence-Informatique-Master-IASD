@@ -1,0 +1,49 @@
+\documentclass[a4paper, 14pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tabto}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage{subcaption}
+\usepackage{float}
+\onehalfspacing
+
+\begin{document}
+
+%régler l'espacement entre les lignes
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\begin{center}
+\noindent
+*ue* \hfill *auteur*
+\vspace{.2cm}
+\hrule 
+\begin{center} \large \textbf{Rapport de TP4}\end{center}
+\hrule
+\vspace{.2cm}
+\end{center}
+
+\tableofcontents
+
+\medskip
+\section{Question X}
+Explications
+
+\begin{figure}[H]
+    \centering
+    \subfloat[Image]{{\includegraphics[width=5cm]{source} }}
+    \qquad
+    \subfloat[Image]{{\includegraphics[width=5cm]{source}}}
+    \caption{legende}
+    \label{fig:example}
+\end{figure}
+
+
+\newpage
+
+\end{document}

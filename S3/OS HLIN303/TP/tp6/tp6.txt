@@ -1,0 +1,56 @@
+5 Entrées/sorties
+
+
+22) appel système rapide, mais ne sont pas interopérables
+Bibliothèques portable.
+
+23) 
+#include <stdio.h>
+#include <fcntl.h>
+#include <sys/types.h>
+
+Int main(int argc, char** argv){
+	int fd = open(argv[1], O_RDONLY);
+	int nbc =0;
+	char c;
+	while (read(fd,&c,1)) {nbc++;}
+	
+	printf("%i\n", nbc);
+	close(fd);
+	Return 0;
+}
+
+
+25)
+
+#include <stdio.h>
+#include <fcntl.h>
+#include <stdlib.h>
+
+Int main(int argc, char** argv){
+	FILE* fd = fopen(argv[2], "r");
+	bool mode= false;
+	if (argv[1][1] != 'c') {nb = atoi(argv[1]+1);}
+	else {
+		nb = atoi(argv[1]+2);
+		mode = true;
+		}
+	int nbl = atoi(argv[1]+1);
+	int cptl = 0;
+	char* ligne[2018];
+	
+	if (mode){
+        while ((c = fgetc(fd)) != EOF && cpt < nb) {
+            printf("%c", c);
+            cpt++;
+        }
+    }
+    else{
+        while (fgets(ligne , 2048, fd) && cpt < nb) {
+            printf("%s", ligne);
+            cpt++;
+        }
+    }
+	close(fd);
+	Return 0;
+}

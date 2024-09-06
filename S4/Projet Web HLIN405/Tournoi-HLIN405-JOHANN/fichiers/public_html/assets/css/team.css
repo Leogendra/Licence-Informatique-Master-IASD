@@ -1,0 +1,16 @@
+#deactivate-team {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=);
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+#deactivate-team td {
+    transform: rotate(-30deg);
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.action-button {
+    z-index: 1000;
+}

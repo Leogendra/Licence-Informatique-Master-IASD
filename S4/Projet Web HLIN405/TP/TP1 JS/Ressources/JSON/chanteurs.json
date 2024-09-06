@@ -1,0 +1,16 @@
+[
+  {
+    "nom": "Christophe",
+    "prenom_reel": "Daniel",
+    "nom_reel": "Bevilacqua",
+    "image": "christophe.jpg",
+    "lien": "albums-Christophe"
+  },  
+  {
+    "nom": "Demis Roussos",
+    "prenom_reel": "Demis",
+    "nom_reel": "Roussos",
+    "image" : "roussos.jpg",
+    "lien": "albums-Roussos"
+  }  
+]

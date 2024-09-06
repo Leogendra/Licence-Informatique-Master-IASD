@@ -1,0 +1,12 @@
+
+.carousel-inner img{
+    opacity:0.40;
+}
+
+.carousel-wrapper{
+    background-color: rgb(54, 54, 54);
+}
+
+img{
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.7);
+}

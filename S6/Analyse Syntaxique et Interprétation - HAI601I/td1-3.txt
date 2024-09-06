@@ -1,0 +1,119 @@
+1 Analyse lexicale
+TD/TP 1
+
+1. un langage rationnel est caractérisé par le plus petit ensemble T tel que
+2. non réguliers car ils possèdent des structures emboitées non bornées 
+3. on peut caracteriser le langage algébrique par induction
+
+4. 
+... = multiplicité
+[] = optionnel
+| = union
+{} = l'un des paramètres
+into_option = mettre un res dans une table
+; = char terminal
+
+5. vrai
+faux(;)
+vrai
+
+EX 2 :
+légende : <-> état cirulaire
+
+1.
+() ->i () ->f ((if))
+|_>e () ->l () ->s () ->e ((else))
+|_>t () ->h () ->e () ->n ((then))
+             |_>r () ->o () ->w ((throw))
+
+2.
+() ->[1-9] ((litent)) <->[0-9]
+|_>0 ((litent)) ->[0-7] ((litent)) <->[0-7]
+         |_>[xX] () ->[0-9,A-F,a-f] ((litent)) <->[0-9,A-F,a-f]
+
+litent : litéral terminal
+
+3.
+() <->[A-Z,a-z,0-9,_] 
+|_>l ((identifciateur)) <->[A-Z,a-z,0-9,_]
+
+4.
+()->[1-9] () <->[0-9] ->.
+|_>.
+|_>0 () ->. ((litflot)) <->[0-9] 
+             |_>e ()
+		  |_>- () ->[1-9] (()) <->[0-9]
+
+5.
+() ->[" ",\n,\t,\r] (()) <->[" ",\n,\t,\r] ->1 (-)
+|_>/ () ->/ () -> \n ((-2)) 
+
+
+
+TD 2
+
+Ex 4 : 
+Lkey = L(if|then|else|throw)
+Lc10 = L(0|([1-9][0-9]*))
+Lc8 = L([1-7][0-7]*)
+Lc16 = L(([1-9]|[A-F]|[a-f]) ([0-9]|[A-F]|[a-f])*)
+Lid = L(([1-9]|[A-Z]|[a-z]|"_")* ([A-Z]|[a-z]) ([1-9]|[A-Z]|[a-z]|"_")*)
+Lf = L( (0|[1-9][0-9])* \. ([0-9]*[1-9]|0) ("e"(-|+)?([1-9][0-9])*)? )
+Lsep = L( "//" | ("/*"(.|\n)*"*/") | " " | "\t" | "\n" | "\r")
+
+Ex 5 :
+
+%{ /* analflex.l */
+/* ZONE DE DEFINITION (OPTIONNELLE) */
+/* ZONE DES REGLES apres le double pourcent (OBLIGATOIRE) */
+%}
+%%
+if|then|else|throw {return "if, then, else";}
+0|([1-9][0-9]*) {return "entier";}
+([1-9]|[A-Z]|[a-z]|"_")*([A-Z]|[a-z])([1-9]|[A-Z]|[a-z]|"_")* {return "identificateur";}
+
+.|\n {return "non reconnu";}
+%%
+/* ZONE DES FONCTIONS C */
+main() {
+	int j; char *invite="Saisissez un(des) mot(s) matchant a(b+c)?|bd suivi de EOF (CTRL-D) SVP : ";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

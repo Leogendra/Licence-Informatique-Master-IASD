@@ -1,0 +1,34 @@
+EXO 1
+
+1.
+SELECT refAppartement FROM Appartement WHERE refAppartement NOT IN (SELECT refAppartement FROM Réparation);
+
+2.
+SELECT nom, prenom, COUNT(*) AS nbContrats FROM Client, Contrat WHERE Client.numClient=Contrat.numClient AND dateFinLoc>date(now()) GROUP BY numClient, nom, prenom;
+
+3.
+SELECT SUM(cout) FROM Réparation, Contrat, Client WHERE Réparation.refAppartement=Contrat.refAppartement AND Contrat.numClient=Client.numClient AND Client.nom='Durand' AND Client.prenom='Michel' GROUP BY nom, prenom, numClient;
+
+4.
+SELECT adresse FROM Appartement WHERE refAppartement NOT IN (SELECT refAppartement FROM Contrat WHERE (dateFinLoc - dateDebutLoc) >= 90);
+
+5.
+SELECT refAppartement, numReparation FROM Reparation R1 WHERE cout = (SELECT MAX(cout) FROM Reparation R2 WHERE R1.refAppartement=R2.refAppartement);
+
+
+EXO 2
+
+1.
+SELECT titre FROM Publication ORDER BY date;
+
+2.
+SELECT nom, prenom, COUNT(*) FROM Chercheur, Chercheur-Publication, Publication, TypePublication where (Chercheur.codeChe=Chercheur-Publication.codeChe) AND (Publication.typePub=TypePublication.typePub) AND (rang="A") GROUP BY Chercheur.codeChe, Chercheur.nom, Chercheur.prenom;
+
+3.
+SELECT nom, prenom FROM Chercheur WHERE Chercheur.codeChe NOT IN (SELECT codeChe FROM Chercheur-Publication, Publication WHERE (Chercheur-Publication.codePub = Publication.codePub) AND year(date)=2019);
+
+4.
+SELECT nom, prenom FROM Chercheur, Chercheur-Publication, Publication WHERE (Chercheur.codeChe=Chercheur-Publication.codeChe) AND (Chercheur-Publication.codePub=Publication.codePub) AND year(date)=2019 GROUP BY Chercheur.codeChe, Chercheur.nom, Chercheur.prenom HAVING COUNT(*) >= 2;
+
+5.
+SELECT nom, prenom, titre FROM Chercheur, Chercheur-Publication Chercheur-Publication1, Publication Publication1 WHERE (Chercheur.codeChe=Chercheur-Publication1.codeChe) AND (Chercheur-Publication1.codePub=Publication1.codePub) AND date = (SELECT MAX(date) FROM Publication Publication 2, Chercheur-Publication Chercheur-Publication2 WHERE (Publication2.codePub = Chercheur-Publication2.codePub) AND Chercheur-Publication2.codeChe=Chercheur.codeChe);

@@ -1,0 +1,76 @@
+Sujet du Projet
+Le projet consiste à développer un site de gestion de tournoi (sportif ou festif). Le tournoi sera typiquement de la forme d'une coupe ou d'un championnat selon les évènements à gérer.
+
+Dans un premier temps, vous devrez développer un site permettant la réalisation d'un tournoi binaire (type coupe ou tournoi de tennis) modélisé par un arbre binaire complet. Une fois, ce site réalisé et validé par votre encadrant, vous devrez faire évoluer votre application pour permettre la gestion de tournois de type différents, améliorer l'interface, ajouter des fonctionnalités à votre application...
+
+
+0- Organisation du groupe
+Il est important que le projet ne se scinde pas en sous-projets indépendants voire concurrents au sein d'un même groupe. Pour cela, il faut organiser le travail à faire!
+Pour chaque étape, il faut se répartir les tâches à effectuer et les plannifier a priori (voire faire un diagramme de Gantt). C'est important que personne ne soit mis à l'écart. Des créneaux de travail doivent être mis en place, et tout le groupe doit se voir (visio si besoin) pour faire le point au moins une fois par semaine. Du temps doit être prévu pour l'écriture du mémoire et la préparation de la soutenance. Il peut être bon de prévoir des plages de temps vide en cas de retard.
+Ce planning et répartition des tâches doit être fait avant tout développement et discuté avec votre encadrant.
+
+
+1- Base de données à créer
+La première étape consiste a créer une base de données MySQL comportant plusieurs tables . Cette base sera celle utilisée dans tout le projet, aussi bien pour développer le site de base que ses extensions. Dans l'énoncé, les mots en italiques concernent les possibles extensions du site, mais les tables/attributs correspondants doivent être présents à la création de la base.
+Votre base de données doit permettre:
+D'identifier des utilisateurs particuliers:
+un ou des administrateurs du site
+des gestionnaires de tournois gérant un ou plusieurs tournois
+D'associer à chaque tournoi:
+un nom
+une date de début
+une durée
+le gestionnaire du tournoi
+un lieu
+le nombre d'équipes inscrites
+la liste de ces équipes 
+le type de tournoi : coupe, championnat (toutes les équipes se rencontrent), tournoi en plusieurs tours composés chacun de poules (chaque poule est un mini-championnat).
+Pour chaque équipe, de stocker les informations suivantes:
+un nom d'équipe
+un niveau (entier entre 1 et 100, du  niveau le plus fort au plus faible)
+un contact: adresse et n. de téléphone
+une liste (non vide) des joueurs inscrits dans l'équipe. Un des joueurs sera capitaine de l'équipe
+Pour chaque rencontre (match), de récupérer les informations suivantes:
+les équipes qui se rencontrent
+la date et l'horaire de la rencontre
+l'équipe gagnante
+Un score associé à chaque équipe, celui de l'équipe gagnante devant être supérieur à celui de l'équipe perdante
+Il faudra créer les tables adéquates et chaque table devra posséder une clef primaire.
+
+
+
+2- Application de base
+Cette application de base doit permettre de gérer un tournoi de type coupe (voir exemple1 ou exemple2 si besoin) se déroulant en plusieurs tours (... 8ème de finale, quart de finale, demie finale...) et impliquant un nombre d'équipes qui sera une puissance de 2 (2,4,8,16...).
+L'application doit être développée en PHP du côté serveur et en HTML, CSS (Bootstrap ou autre) et JavaScript côté client.
+Un framework (PHP ou JS) pourra être utilisé uniquement pour la 2ème étape !
+
+Les fonctionnalités suivantes sont attendues:
+
+L'administateur du site doit pouvoir créer le tournoi, le paramétrer et lui affecter un gestionnaire.
+Le capitaine d'une équipe doit pouvoir se préinscrire (lui et ses partenaires) à un tournoi.
+Le gestionnaire du tournoi doit pouvoir valider l'insription des équipes, saisir les rencontres (dates et adversaires), les  scores à l'issu des rencontres et permettre de passer au tour suivant. Les rencontres du premier tour, ainsi que le déroulement de la suite de la compétition, pourront être fixé par le gestionnaire ou choisi aléatoirement.
+Dans le but d'effectuer une démonstration de l'application, une fonctionnalité permettra de remplir aléatoirement les équipes participant à un tournoi et les scores des rencontres.
+Une partie publique avec un affichage des tournois passés, en cours et à venir, l'affichage du déroulement des tournois passés et en cours est à prévoir aussi. L'interface peut-être sommaire dans un premier temps.
+Une fois cette application de base terminée, et après accord de votre encadrant, il est possible de faire évoluer celle-ci. Penser à garder toutefois une copie de cette application de base.
+
+
+3- Fonctionnalités avancées
+Une fois l'application de base terminée, vous pouvez ajouter des fonctionnalités supplémentaires. Une liste de propositions vous est donnée ci-dessous. Vous pouvez aussi faire d'autres propositions à votre encadrant. Bien entendu, plus votre travail sera enrichi, mieux il sera évalué.
+
+Gérer d'autres types de tournoi:
+Championnat, avec des régles de classement à établir, possiblement prenant en compte des scores de victoires. Il pourra être aussi possible de gérer des matchs nuls.
+Tournoi avec poules et phases finales.
+Enrichir l'interface de votre site web:
+Compléter la feuille de style.
+Ajouter des images, menus déroulants...
+Rajouter un carroussel d'images.
+Rajouter une carte avec OpenLayers afin de placer les différents lieux de rencontre.
+Génération de la compétition:
+Lors d'une coupe, on pourra faire en sorte que les équipes avec les niveaux les plus élevés se rencontrent le plus loin possible dans la compétition. 
+On pourra aussi gérer des coupes où le nombre d'équipes n'est pas une puissance de 2: dans ce cas chaque équipe rentre soit au premier tour de la compétition, soit au second tour. Les équipes avec les scores les plus élevés ne rentreront qu'au second tour.
+Lors d'un championnat, l'application pourra générer les différentes journées par la méthode de round-robin.  Pour aller encore plus loin dans cet aspect, on pourra rajouter un autre type de tournoi: championnat avec rencontres aller et retour et générer les journées afin (d'essayer) d'alterner le plus possible pour chaque équipe les matchs à domicile et les matchs à l'extérieur.
+
+4- Mémoire et soutenance
+Il faut prévoir du temps pour la rédaction du mémoire et la préparation/répétition de la soutenance.
+Le mémoire devra faire une dizaine de pages: environ deux pages seront consacrées à l'organisation du travail au sein du groupe, vous décrirez ensuite quelques points techniques particuliers, éventuellement les difficultés rencontrées et insisterez sur les fonctionnalités avancées que vous aurez développées.
+La soutenance durera 20 minutes: 10 minutes de présentation de votre travail et démonstration de l'application et 10 minutes de questions. Pensez à ce que chaque membre du groupe prenne bien la parole lors de la présentation.

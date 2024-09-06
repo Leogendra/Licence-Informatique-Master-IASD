@@ -1,0 +1,6 @@
+Un corps de test de l'édition du DOM.
+<?php
+for($i = 1; $i <= 10; ++$i) : ?>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus eros, mattis et neque quis, cursus lobortis metus. Praesent sagittis dolor ac imperdiet finibus. Pellentesque sodales, diam sed placerat lobortis, dolor erat euismod lectus, vel bibendum dolor risus nec dui. Etiam vitae lectus tristique, bibendum lectus vitae, suscipit erat. Fusce pulvinar magna id ipsum dictum, eu imperdiet augue ullamcorper. Phasellus eu bibendum eros, ac sagittis neque. Maecenas non dui turpis. Duis at egestas risus. </p>
+    <p class="admin-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse risus eros, mattis et neque quis, cursus lobortis metus. Praesent sagittis dolor ac imperdiet finibus. Pellentesque sodales, diam sed placerat lobortis, dolor erat euismod lectus, vel bibendum dolor risus nec dui. Etiam vitae lectus tristique, bibendum lectus vitae, suscipit erat. Fusce pulvinar magna id ipsum dictum, eu imperdiet augue ullamcorper. Phasellus eu bibendum eros, ac sagittis neque. Maecenas non dui turpis. Duis at egestas risus. </p>
+<?php endfor; ?>

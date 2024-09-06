@@ -1,0 +1,24 @@
+body { font-size: 14pt;
+       width: 800px; 
+       margin-left: auto;
+       margin-right: auto; }
+
+header {margin: 20px; }
+header p {font-size: 28pt;
+	  color: red; }
+
+article { margin: 10px; }
+
+p { font-size: 18pt;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace; }
+
+table { font-size: 12pt; }
+
+li { list-style-position: inside; }
+
+.right {text-align: right; }
+
+#photo { width: 100px;
+	 height: 120px;
+         float: right; }

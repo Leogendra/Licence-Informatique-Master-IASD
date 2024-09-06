@@ -1,0 +1,17 @@
+table a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.deactivate-team {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAADNSURBVHjarNKxSgNBEADQd8M1EgL2fl8qI4hJYTptgqAoFrFQP2w/IFjaiFrGZgMiyd2t2YGFnR147AzTpJTWOMYI1/lsDIsFLtHk/KPFSU5ecWV4LLD88zaOfHnC5EAMPgPnOK2AwSjwWIDNOjC4j8Kf3XXUHzCLCm1usQuImtgQsAjrA4uxLvBf2D6wbzVW+7BdYN9qrDDtGnoUtjntW4k4dGa7wGoYNCmlTS0Mk8B3JewGzy2OKmC3mEOLN4x/FV/yLg6Ns4x94f1nAHu1NabGp7V3AAAAAElFTkSuQmCC);
+}
+
+.player-team {
+    background-color: rgb(206, 245, 194);
+}

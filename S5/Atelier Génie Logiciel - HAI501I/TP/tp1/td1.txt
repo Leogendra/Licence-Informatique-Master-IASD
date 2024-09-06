@@ -1,0 +1,17 @@
+collecte des sujets par le responsable (titre, resume) : proposé par l'enseignant (encadrant)
+page web avec caracteristique des sujets
+etudiants classent leur voeux
+affectation
+second classement parmis le voeux restants
+deuxieme phase d'affectation
+processus d'affectation des rapporteurs
+	- chaque sujet a un rapporteur
+	- un enseignant ne peut pas rapporter son groupe
+	- enregistré sur une page web
+generation de la planification de la soutenance
+
+1) acteurs : responsable TER
+
+fonctionnalités : 
+générer une page web avec les sujets
+affectation groupe-sujet

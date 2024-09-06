@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Projet "Preuves en logique propositionnelle classique"
+
+# Script spécifique aux ordinateurs de la FdS (pour JavaFX)
+# Script exécutable depuis un terminal (./start-lk)
+# Ou directement depuis l'explorateur de fichier
+
+java11="/usr/lib/jvm/java-11-openjdk-amd64/bin/java"
+jfx="/usr/share/openjfx/lib"
+modules="javafx.controls,javafx.fxml,javafx.graphics"
+jar="./lk.jar"
+
+$java11 --module-path $jfx --add-modules $modules -jar $jar
